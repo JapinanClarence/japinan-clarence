@@ -70,7 +70,7 @@ function App() {
                 </div>
 
               </div>
-              <div className="aspect-square h-[300px] overflow-clip">
+              <div className="aspect-square h-[300px] overflow-clip z-10">
                 <img src={heroImage} alt="" className=" object-cover" />
               </div>
             </div>
