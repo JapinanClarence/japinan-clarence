@@ -22,6 +22,7 @@ import tailwindIcon from "./assets/tailwind.png";
 import bootstrapIcon from "./assets/bootstrap.png";
 import mysqslIcon from "./assets/mysql.png";
 import reactjsIcon from "./assets/reactjs.png";
+import mongodbIcon from "./assets/mongodb.png";
 
 function App() {
   const words = ["responsive", "beautiful", "modern"];
@@ -84,6 +85,7 @@ function App() {
                 <img src={bootstrapIcon} alt="" />
                 <img src={tailwindIcon} alt="" />
                 <img src={mysqslIcon} alt="" />
+                <img src={mongodbIcon} alt="" />
               </div>
             </div>
           </div>
