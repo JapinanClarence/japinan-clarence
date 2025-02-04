@@ -167,9 +167,9 @@ function App() {
         </Sheet>
       </header>
       <TracingBeam className={"px-10"}>
-        <div className="relative pt-20 antialiased">
+        <div className="relative h-full antialiased">
           <div
-            className="h-[40rem] md:h-[60rem] flex flex-col lg:flex-row justify-center gap-10 items-center"
+            className="h-screen flex flex-col lg:flex-row justify-center gap-10 items-center"
             id="home"
           >
             <div className="">
