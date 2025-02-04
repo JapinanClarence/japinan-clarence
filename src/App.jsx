@@ -167,13 +167,13 @@ function App() {
         </Sheet>
       </header>
 
-      <div className="relative pt-20 md:px-80">
+      <div className="relative pt-20 px-20 lg:px-[30rem]">
         <div
-          className="h-[40rem] md:h-[60rem] p-10 flex flex-col md:flex-row justify-center md:justify-between gap-10 items-center"
+          className="h-[40rem] md:h-[60rem] p-10 flex flex-col lg:flex-row justify-center lg:justify-between gap-10 items-center"
           id="home"
         >
           <div className="">
-            <h1 className="relative z-10 text-4xl md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-start font-sans font-bold">
+            <h1 className="relative z-10 text-4xl lg:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-start font-sans font-bold">
               JapinanClarence
             </h1>
 
@@ -183,7 +183,7 @@ function App() {
               website
             </div>
           </div>
-          <div className="aspect-square max-h-[300px] overflow-clip z-10">
+          <div className="aspect-square h-[300px] overflow-clip z-10">
             <img src={heroImage} alt="" className=" object-cover" />
           </div>
         </div>
