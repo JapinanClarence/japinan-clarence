@@ -197,7 +197,7 @@ function App() {
             </div>
           </div>
           <div className="space-y-10 relative antialiased">
-            <div className="text-white px-10 md:px-0 py-20" id="about">
+            <div className="text-white md:px-0 py-20" id="about">
               <h1 className="text-center text-4xl mb-5">A Bit About Me</h1>
               <p className="text-pretty">
                 I am a 4th-year Bachelor of Science in Information Technology
