@@ -166,15 +166,14 @@ function App() {
           </SheetContent>
         </Sheet>
       </header>
-
-      <div className="relative pt-20 md:px-20 lg:px-[30rem]">
-        <TracingBeam>
+      <TracingBeam className={"px-10"}>
+        <div className="relative pt-20 antialiased">
           <div
-            className="h-[40rem] md:h-[60rem] p-10 flex flex-col lg:flex-row justify-center lg:justify-between gap-10 items-center relative antialiased"
+            className="h-[40rem] md:h-[60rem] flex flex-col lg:flex-row justify-center gap-10 items-center"
             id="home"
           >
             <div className="">
-              <h1 className="relative z-10 text-4xl lg:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-start font-sans font-bold">
+              <h1 className="relative z-10 text-4xl md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-start font-sans font-bold">
                 JapinanClarence
               </h1>
 
@@ -182,6 +181,15 @@ function App() {
                 I build
                 <FlipWords words={words} className={"text-white md:text-2xl"} />
                 websites
+              </div>
+              <div className="mt-10 z-10 relative">
+                <Button
+                  className="relative"
+                  variant="secondary"
+                  onClick={() => window.open("mailto:japinanclarence@email.com", "_blank")}
+                >
+                  Get in Touch
+                </Button>
               </div>
             </div>
             <div className="aspect-square h-[300px] overflow-clip z-10">
@@ -201,7 +209,7 @@ function App() {
                 developing secure, high-quality web applications.
               </p>
             </div>
-            <div className="text-white px-10 md:px-0 py-10">
+            <div className="text-white ">
               <h1 className="text-center text-4xl font-medium">Tech Stack</h1>
               <div className="mt-10 grid gap-5 md:grid-flow-col grid-cols-4 md:grid-cols-9">
                 <img src={jsIcon} alt="" />
@@ -215,7 +223,7 @@ function App() {
                 <img src={mongodbIcon} alt="" />
               </div>
             </div>
-            <div className="text-white px-10 md:px-0 py-20" id="projects">
+            <div className="text-white py-10" id="projects">
               <h1 className="text-center text-4xl font-medium mb-5">
                 Projects
               </h1>
@@ -322,9 +330,8 @@ function App() {
               </div>
             </div>
           </div>
-        </TracingBeam>
-      </div>
-
+        </div>
+      </TracingBeam>
       <BackgroundBeams className="hidden md:flex" />
     </div>
   );
