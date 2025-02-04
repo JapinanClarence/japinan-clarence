@@ -170,7 +170,7 @@ function App() {
       <div className="relative pt-20 md:px-20 lg:px-[30rem]">
         <TracingBeam>
           <div
-            className="h-[40rem] md:h-[60rem] p-10 flex flex-col lg:flex-row justify-center lg:justify-between gap-10 items-center"
+            className="h-[40rem] md:h-[60rem] p-10 flex flex-col lg:flex-row justify-center lg:justify-between gap-10 items-center relative antialiased"
             id="home"
           >
             <div className="">
@@ -188,7 +188,7 @@ function App() {
               <img src={heroImage} alt="" className=" object-cover" />
             </div>
           </div>
-          <div className="space-y-10">
+          <div className="space-y-10 relative antialiased">
             <div className="text-white px-10 md:px-0 py-20" id="about">
               <h1 className="text-center text-4xl mb-5">A Bit About Me</h1>
               <p className="text-pretty">
