@@ -167,7 +167,7 @@ function App() {
         </Sheet>
       </header>
 
-      <div className="relative pt-20 px-20 lg:px-[30rem]">
+      <div className="relative pt-20 md:px-20 lg:px-[30rem]">
         <div
           className="h-[40rem] md:h-[60rem] p-10 flex flex-col lg:flex-row justify-center lg:justify-between gap-10 items-center"
           id="home"
