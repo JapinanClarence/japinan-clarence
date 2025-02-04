@@ -232,9 +232,9 @@ function App() {
               </h1>
               <h2>Here are some of the projects I have worked on:</h2>
               <div className="mt-10 grid md:grid-flow-row grid-rows-1 md:grid-cols-2  gap-5">
-                <Card className="h-full overflow-hidden">
+                <Card className="h-full overflow-clip bg-neutral-950 border-neutral-700">
                   <CardHeader className="p-0">
-                    <div className={`h-56 bg-slate-200`}>
+                    <div className={`h-56 bg-gray-700`}>
                       <img
                         src={transitMaster}
                         alt=""
@@ -243,7 +243,7 @@ function App() {
                     </div>
                   </CardHeader>
                   <CardContent className="p-5">
-                    <CardTitle className="text-md">
+                    <CardTitle className="text-md text-white">
                       {"TransitMaster"}
                       <Button
                         className="p-0 ml-2 size-2"
@@ -264,9 +264,9 @@ function App() {
                   </CardContent>
                 </Card>
 
-                <Card className="h-full overflow-hidden">
+                <Card className="h-full overflow-hidden  bg-neutral-950 border-neutral-700">
                   <CardHeader className="p-0 ">
-                    <div className={`h-56 bg-slate-200 overflow-clip`}>
+                    <div className={`h-56 bg-slate-700 overflow-clip`}>
                       <img
                         src={aceTrack}
                         alt=""
@@ -275,7 +275,7 @@ function App() {
                     </div>
                   </CardHeader>
                   <CardContent className="p-5">
-                    <CardTitle className="text-md flex items-center">
+                    <CardTitle className="text-md text-white flex items-center">
                       {"AceTrack"}
                       <Button
                         className="p-0 ml-2 size-2"
@@ -297,9 +297,9 @@ function App() {
                     </CardDescription>
                   </CardContent>
                 </Card>
-                <Card className="h-full overflow-hidden">
+                <Card className="h-full overflow-hidden  bg-neutral-950 border-neutral-700">
                   <CardHeader className="p-0 ">
-                    <div className={`h-56 bg-slate-200 overflow-clip`}>
+                    <div className={`h-56 bg-slate-700 overflow-clip`}>
                       <img
                         src={mangoDisease}
                         alt=""
@@ -308,7 +308,7 @@ function App() {
                     </div>
                   </CardHeader>
                   <CardContent className="p-5">
-                    <CardTitle className="text-md flex items-center">
+                    <CardTitle className="text-md  text-white flex items-center">
                       {"MangoDisease Classification Syst"}
                       <Button
                         className="p-0 ml-2 size-2"
