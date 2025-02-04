@@ -104,8 +104,8 @@ function App() {
         </div>
         <Sheet>
           <SheetTrigger className="text-white h-full md:hidden" asChild>
-            <Button variant="icon" className="h-full">
-              <Menu />
+            <Button variant="ghost" size="icon" className="hover:bg-transparent" >
+              <Menu size={40}/>
             </Button>
           </SheetTrigger>
           <SheetContent
@@ -166,38 +166,41 @@ function App() {
           </SheetContent>
         </Sheet>
       </header>
-      <TracingBeam className={"px-10"}>
-        <div className="relative h-full antialiased">
-          <div
-            className="h-screen flex flex-col lg:flex-row justify-center gap-10 items-center"
-            id="home"
-          >
-            <div className="">
-              <h1 className="relative z-10 text-4xl md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-start font-sans font-bold">
-                JapinanClarence
-              </h1>
 
-              <div className="text-white md:text-2xl">
-                I build
-                <FlipWords words={words} className={"text-white md:text-2xl"} />
-                websites
-              </div>
-              <div className="mt-10 z-10 relative">
-                <Button
-                  className="relative"
-                  variant="secondary"
-                  onClick={() => window.open("mailto:japinanclarence@email.com", "_blank")}
-                >
-                  Get in Touch
-                </Button>
-              </div>
+      <div className="antialiased">
+        <div
+          className="h-screen flex flex-col lg:flex-row justify-center gap-10 items-center"
+          id="home"
+        >
+          <div className="">
+            <h1 className="relative z-10 text-4xl md:text-7xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-start font-sans font-bold">
+              JapinanClarence
+            </h1>
+
+            <div className="text-white md:text-2xl">
+              I build
+              <FlipWords words={words} className={"text-white md:text-2xl"} />
+              websites
             </div>
-            <div className="aspect-square h-[300px] overflow-clip z-10">
-              <img src={heroImage} alt="" className=" object-cover" />
+            <div className="mt-10 z-10 relative">
+              <Button
+                className="relative"
+                variant="secondary"
+                onClick={() =>
+                  window.open("mailto:japinanclarence@email.com", "_blank")
+                }
+              >
+                Get in Touch
+              </Button>
             </div>
           </div>
-          <div className="space-y-10 relative antialiased">
-            <div className="text-white md:px-0 py-20" id="about">
+          <div className="aspect-square h-[300px] overflow-clip z-10">
+            <img src={heroImage} alt="" className=" object-cover" />
+          </div>
+        </div>
+        <TracingBeam>
+          <div className="relative antialiased space-y-40">
+            <div className="text-white px-10 md:px-0 pt-14" id="about">
               <h1 className="text-center text-4xl mb-5">A Bit About Me</h1>
               <p className="text-pretty">
                 I am a 4th-year Bachelor of Science in Information Technology
@@ -209,7 +212,7 @@ function App() {
                 developing secure, high-quality web applications.
               </p>
             </div>
-            <div className="text-white ">
+            <div className="text-white px-10 md:px-0">
               <h1 className="text-center text-4xl font-medium">Tech Stack</h1>
               <div className="mt-10 grid gap-5 md:grid-flow-col grid-cols-4 md:grid-cols-9">
                 <img src={jsIcon} alt="" />
@@ -223,7 +226,7 @@ function App() {
                 <img src={mongodbIcon} alt="" />
               </div>
             </div>
-            <div className="text-white py-10" id="projects">
+            <div className="text-white md:h-screen px-10 md:px-0 pt-14 pb-14 md:pb-0" id="projects">
               <h1 className="text-center text-4xl font-medium mb-5">
                 Projects
               </h1>
@@ -330,8 +333,9 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
-      </TracingBeam>
+        </TracingBeam>
+      </div>
+
       <BackgroundBeams className="hidden md:flex" />
     </div>
   );
