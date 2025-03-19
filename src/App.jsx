@@ -33,6 +33,7 @@ import reactjsIcon from "./assets/reactjs.png";
 import mongodbIcon from "./assets/mongodb.png";
 import aceTrack from "./assets/ace-track.png";
 import transitMaster from "./assets/transitmaster.png";
+import ltowebsite from "./assets/Lto-web.png";
 import { Github, Link, Menu } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import mangoDisease from "./assets/mango-desease.png";
@@ -232,6 +233,39 @@ function App() {
               </h1>
               <h2>Here are some of the projects I have worked on:</h2>
               <div className="mt-10 grid md:grid-flow-row grid-rows-1 md:grid-cols-2  gap-5">
+              <Card className="h-full overflow-hidden  bg-neutral-950 border-neutral-700">
+                  <CardHeader className="p-0 ">
+                    <div className={`h-56 bg-slate-700 overflow-clip`}>
+                      <img
+                        src={ltowebsite}
+                        alt=""
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
+                  </CardHeader>
+                  <CardContent className="p-5">
+                    <CardTitle className="text-md  text-white flex items-center">
+                      {"LTO-Mati Website"}
+                      <Button
+                        className="p-0 ml-2 size-2"
+                        variant="icon"
+                        onClick={() =>
+                          window.open(
+                            "https://lto-website.vercel.app",
+                            "_blank"
+                          )
+                        }
+                      >
+                        <Link size={5} />
+                      </Button>
+                    </CardTitle>
+                    <CardDescription>
+                      {
+                        "Driver and vehicle registration montoring system."
+                      }
+                    </CardDescription>
+                  </CardContent>
+                </Card>
                 <Card className="h-full overflow-clip bg-neutral-950 border-neutral-700">
                   <CardHeader className="p-0">
                     <div className={`h-56 bg-gray-700`}>
