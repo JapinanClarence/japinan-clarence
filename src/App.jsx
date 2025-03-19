@@ -261,7 +261,7 @@ function App() {
                     </CardTitle>
                     <CardDescription>
                       {
-                        "Driver and vehicle registration montoring system."
+                        "Driver and vehicle registration monitoring system."
                       }
                     </CardDescription>
                   </CardContent>
