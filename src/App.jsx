@@ -204,13 +204,7 @@ function App() {
             <div className="text-white px-10 md:px-0 pt-14" id="about">
               <h1 className="text-center text-4xl mb-5">A Bit About Me</h1>
               <p className="text-pretty">
-                I am a 4th-year Bachelor of Science in Information Technology
-                student with a strong passion for backend web development. I
-                have experience working with PHP, MySQL, and the MERN stack and
-                am proficient in building scalable and efficient RESTful APIs.
-                Constantly eager to learn and improve, I enjoy optimizing
-                database structures, enhancing system performance, and
-                developing secure, high-quality web applications.
+               Passionate backend web developer with hands-on experience in PHP, MySQL, and the MERN stack. Skilled in building scalable and efficient RESTful APIs, optimizing database structures, enhancing system performance, and developing secure, high-quality web applications. Always eager to learn and improve in fast-paced development environments.
               </p>
             </div>
             <div className="text-white px-10 md:px-0">
@@ -331,39 +325,7 @@ function App() {
                     </CardDescription>
                   </CardContent>
                 </Card>
-                <Card className="h-full overflow-hidden  bg-neutral-950 border-neutral-700">
-                  <CardHeader className="p-0 ">
-                    <div className={`h-56 bg-slate-700 overflow-clip`}>
-                      <img
-                        src={mangoDisease}
-                        alt=""
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                  </CardHeader>
-                  <CardContent className="p-5">
-                    <CardTitle className="text-md  text-white flex items-center">
-                      {"MangoDisease Classification Syst"}
-                      <Button
-                        className="p-0 ml-2 size-2"
-                        variant="icon"
-                        onClick={() =>
-                          window.open(
-                            "https://github.com/JapinanClarence/Mango-Desease-Classification-Web-App.git",
-                            "_blank"
-                          )
-                        }
-                      >
-                        <Github size={5} />
-                      </Button>
-                    </CardTitle>
-                    <CardDescription>
-                      {
-                        "A mango disease classification system, made with tensorflow."
-                      }
-                    </CardDescription>
-                  </CardContent>
-                </Card>
+               
               </div>
             </div>
           </div>
