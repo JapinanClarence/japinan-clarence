@@ -10,7 +10,7 @@ import {
 import { Github, Link, Menu } from "lucide-react";
 import { Button } from "../ui/button";
 const ProjectCard = ({data}) => {
-
+  console.log(data.image)
   return (
     <Card className="h-full overflow-hidden  bg-neutral-950 border-neutral-700">
       <CardHeader className="p-0 ">
