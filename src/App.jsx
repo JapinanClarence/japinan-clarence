@@ -2,27 +2,8 @@ import { useState } from "react";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { FlipWords } from "./components/ui/flip-words";
 import { TracingBeam } from "./components/ui/tracing-beam";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { Button } from "./components/ui/button";
 import heroImage from "./assets/clarence.jpg";
-import bouy from "./assets/bouy.jpg";
 import jsIcon from "./assets/javascript.png";
 import phpIcon from "./assets/php.png";
 import nodeJsIcon from "./assets/nodejs.png";
@@ -32,12 +13,8 @@ import bootstrapIcon from "./assets/bootstrap.png";
 import mysqslIcon from "./assets/mysql.png";
 import reactjsIcon from "./assets/reactjs.png";
 import mongodbIcon from "./assets/mongodb.png";
-import aceTrack from "./assets/ace-track.png";
-import transitMaster from "./assets/transitmaster.png";
-import ltowebsite from "./assets/Lto-web.png";
-import { Github, Link, Menu } from "lucide-react";
+import { Menu } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-import mangoDisease from "./assets/mango-desease.png";
 import {
   Sheet,
   SheetContent,
@@ -47,10 +24,13 @@ import {
   SheetTrigger,
   SheetClose,
 } from "@/components/ui/sheet";
+import projects from "../src/data/projects.json";
+import ProjectCard from "./components/projects/ProjectCard";
 
 function App() {
   const navigate = useNavigate();
   const words = ["responsive", "beautiful", "modern"];
+
   return (
     <div className="bg-neutral-950">
       <header className=" h-[50px] w-full top-0 left-0 fixed z-50 bg-black/30 backdrop-blur-md shadow-md">
@@ -240,135 +220,9 @@ function App() {
               </h1>
               <h2>Here are some of the projects I have worked on:</h2>
               <div className="mt-10 grid md:grid-flow-row grid-rows-1 md:grid-cols-2  gap-5">
-                <Card className="h-full overflow-hidden  bg-neutral-950 border-neutral-700">
-                  <CardHeader className="p-0 ">
-                    <div className={`h-56 bg-slate-700 overflow-clip`}>
-                      <img
-                        src={ltowebsite}
-                        alt=""
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                  </CardHeader>
-                  <CardContent className="p-5">
-                    <CardTitle className="text-md  text-white flex items-center">
-                      {"LTO-Davao Region Website"}
-                      <Button
-                        className="p-0 ml-2 size-2"
-                        variant="icon"
-                        onClick={() =>
-                          window.open(
-                            "https://lto-website.vercel.app",
-                            "_blank"
-                          )
-                        }
-                      >
-                        <Link size={5} />
-                      </Button>
-                    </CardTitle>
-                    <CardDescription>
-                      {"Driver and vehicle registration monitoring system."}
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-                <Card className="h-full overflow-clip bg-neutral-950 border-neutral-700">
-                  <CardHeader className="p-0">
-                    <div className={`h-56 bg-gray-700`}>
-                      <img
-                        src={transitMaster}
-                        alt=""
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                  </CardHeader>
-                  <CardContent className="p-5">
-                    <CardTitle className="text-md text-white">
-                      {"TransitMaster"}
-                      <Button
-                        className="p-0 ml-2 size-2"
-                        variant="icon"
-                        onClick={() =>
-                          window.open(
-                            "https://app-transitmaster.vercel.app/",
-                            "_blank"
-                          )
-                        }
-                      >
-                        <Link size={5} />
-                      </Button>
-                    </CardTitle>
-                    <CardDescription>
-                      {"School vehicle scheduling and tracking system"}
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-
-                <Card className="h-full overflow-hidden  bg-neutral-950 border-neutral-700">
-                  <CardHeader className="p-0 ">
-                    <div className={`h-56 bg-slate-700 overflow-clip`}>
-                      <img
-                        src={aceTrack}
-                        alt=""
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                  </CardHeader>
-                  <CardContent className="p-5">
-                    <CardTitle className="text-md text-white flex items-center">
-                      {"AceTrack"}
-                      <Button
-                        className="p-0 ml-2 size-2"
-                        variant="icon"
-                        onClick={() =>
-                          window.open(
-                            "https://acetrack.vercel.app/home",
-                            "_blank"
-                          )
-                        }
-                      >
-                        <Link size={5} />
-                      </Button>
-                    </CardTitle>
-                    <CardDescription>
-                      {
-                        "Efficient scanning and clear identification for seamless attendance management."
-                      }
-                    </CardDescription>
-                  </CardContent>
-                </Card>
-                <Card className="h-full overflow-hidden  bg-neutral-950 border-neutral-700">
-                  <CardHeader className="p-0 ">
-                    <div className={`h-56 bg-slate-700 overflow-clip`}>
-                      <img
-                        src={bouy}
-                        alt=""
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                  </CardHeader>
-                  <CardContent className="p-5">
-                    <CardTitle className="text-md text-white flex items-center">
-                      {"Biophysical Ocean Bouy Development"}
-                      {/* <Button
-                        className="p-0 ml-2 size-2"
-                        variant="icon"
-                        // onClick={() =>
-                        //   window.open(
-                        //     "https://acetrack.vercel.app/home",
-                        //     "_blank"
-                        //   )
-                        // }
-                      >
-                        <Link size={5} />
-                      </Button> */}
-                    </CardTitle>
-                    <CardDescription>
-                      {
-                        "Contributed to the development of the biophysical ocean bouy, this device can measure the temperature and ph level of the water. It is also equipped with a GPS module to track the location of the bouy."
-                      }
-                    </CardDescription>
-                  </CardContent>
-                </Card>
+                {projects.map((item, index) => {
+                  return <ProjectCard key={index} data={item} />;
+                })}
               </div>
             </div>
           </div>
