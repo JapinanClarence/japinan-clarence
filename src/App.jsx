@@ -22,6 +22,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "./components/ui/button";
 import heroImage from "./assets/clarence.jpg";
+import bouy from "./assets/bouy.jpg";
 import jsIcon from "./assets/javascript.png";
 import phpIcon from "./assets/php.png";
 import nodeJsIcon from "./assets/nodejs.png";
@@ -105,8 +106,12 @@ function App() {
         </div>
         <Sheet>
           <SheetTrigger className="text-white h-full md:hidden" asChild>
-            <Button variant="ghost" size="icon" className="hover:bg-transparent" >
-              <Menu size={40}/>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="hover:bg-transparent"
+            >
+              <Menu size={40} />
             </Button>
           </SheetTrigger>
           <SheetContent
@@ -204,7 +209,12 @@ function App() {
             <div className="text-white px-10 md:px-0 pt-14" id="about">
               <h1 className="text-center text-4xl mb-5">A Bit About Me</h1>
               <p className="text-pretty">
-               Passionate backend web developer with hands-on experience in PHP, MySQL, and the MERN stack. Skilled in building scalable and efficient RESTful APIs, optimizing database structures, enhancing system performance, and developing secure, high-quality web applications. Always eager to learn and improve in fast-paced development environments.
+                Passionate backend web developer with hands-on experience in
+                PHP, MySQL, and the MERN stack. Skilled in building scalable and
+                efficient RESTful APIs, optimizing database structures,
+                enhancing system performance, and developing secure,
+                high-quality web applications. Always eager to learn and improve
+                in fast-paced development environments.
               </p>
             </div>
             <div className="text-white px-10 md:px-0">
@@ -221,13 +231,16 @@ function App() {
                 <img src={mongodbIcon} alt="" />
               </div>
             </div>
-            <div className="text-white md:h-screen px-10 md:px-0 pt-14 pb-14 md:pb-0" id="projects">
+            <div
+              className="text-white md:h-screen px-10 md:px-0 pt-14 pb-14 md:pb-0"
+              id="projects"
+            >
               <h1 className="text-center text-4xl font-medium mb-5">
                 Projects
               </h1>
               <h2>Here are some of the projects I have worked on:</h2>
               <div className="mt-10 grid md:grid-flow-row grid-rows-1 md:grid-cols-2  gap-5">
-              <Card className="h-full overflow-hidden  bg-neutral-950 border-neutral-700">
+                <Card className="h-full overflow-hidden  bg-neutral-950 border-neutral-700">
                   <CardHeader className="p-0 ">
                     <div className={`h-56 bg-slate-700 overflow-clip`}>
                       <img
@@ -239,7 +252,7 @@ function App() {
                   </CardHeader>
                   <CardContent className="p-5">
                     <CardTitle className="text-md  text-white flex items-center">
-                      {"LTO-Mati Website"}
+                      {"LTO-Davao Region Website"}
                       <Button
                         className="p-0 ml-2 size-2"
                         variant="icon"
@@ -254,9 +267,7 @@ function App() {
                       </Button>
                     </CardTitle>
                     <CardDescription>
-                      {
-                        "Driver and vehicle registration monitoring system."
-                      }
+                      {"Driver and vehicle registration monitoring system."}
                     </CardDescription>
                   </CardContent>
                 </Card>
@@ -325,7 +336,39 @@ function App() {
                     </CardDescription>
                   </CardContent>
                 </Card>
-               
+                <Card className="h-full overflow-hidden  bg-neutral-950 border-neutral-700">
+                  <CardHeader className="p-0 ">
+                    <div className={`h-56 bg-slate-700 overflow-clip`}>
+                      <img
+                        src={bouy}
+                        alt=""
+                        className="h-full w-full object-cover"
+                      />
+                    </div>
+                  </CardHeader>
+                  <CardContent className="p-5">
+                    <CardTitle className="text-md text-white flex items-center">
+                      {"Biophysical Ocean Bouy Development"}
+                      {/* <Button
+                        className="p-0 ml-2 size-2"
+                        variant="icon"
+                        // onClick={() =>
+                        //   window.open(
+                        //     "https://acetrack.vercel.app/home",
+                        //     "_blank"
+                        //   )
+                        // }
+                      >
+                        <Link size={5} />
+                      </Button> */}
+                    </CardTitle>
+                    <CardDescription>
+                      {
+                        "Contributed to the development of the biophysical ocean bouy, this device can measure the temperature and ph level of the water. It is also equipped with a GPS module to track the location of the bouy."
+                      }
+                    </CardDescription>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
