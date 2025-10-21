@@ -26,10 +26,10 @@ import {
 } from "@/components/ui/sheet";
 import projects from "../src/data/projects.json";
 import ProjectCard from "./components/projects/ProjectCard";
+import data from "../src/data/data.json";
 
 function App() {
   const navigate = useNavigate();
-  const words = ["responsive", "beautiful", "modern"];
 
   return (
     <div className="bg-neutral-950">
@@ -165,7 +165,7 @@ function App() {
 
             <div className="text-white md:text-2xl">
               I build
-              <FlipWords words={words} className={"text-white md:text-2xl"} />
+              <FlipWords words={data.flipWords} className={"text-white md:text-2xl"} />
               websites
             </div>
             <div className="mt-10 z-10 relative">
@@ -189,12 +189,7 @@ function App() {
             <div className="text-white px-10 md:px-0 pt-14" id="about">
               <h1 className="text-center text-4xl mb-5">A Bit About Me</h1>
               <p className="text-pretty">
-                Passionate backend web developer with hands-on experience in
-                PHP, MySQL, and the MERN stack. Skilled in building scalable and
-                efficient RESTful APIs, optimizing database structures,
-                enhancing system performance, and developing secure,
-                high-quality web applications. Always eager to learn and improve
-                in fast-paced development environments.
+               {data.aboutMe}
               </p>
             </div>
             <div className="text-white px-10 md:px-0">

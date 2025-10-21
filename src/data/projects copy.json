@@ -1,0 +1,30 @@
+[
+    {
+        "title":"LTO-Davao Region Management System",
+        "description":"Driver and vehicle registration monitoring system.",
+        "image":"/Lto-web.png",
+        "isClickable":true,
+        "link":"https://lto-website.vercel.app"
+    },
+    {
+        "title": "AceTrack",
+        "description": "Efficient scanning and clear identification for seamless attendance management.",
+        "image": "/ace-track.png",
+        "isClickable": true,
+        "link": "https://acetrack.vercel.app/home"
+    },
+    {
+        "title":"TransitMaster",
+        "description":"Vehicle scheduling and tracking system",
+        "image":"/transitmaster.png",
+        "isClickable":true,
+        "link":"https://app-transitmaster.vercel.app"
+    },
+    {
+        "title": "Biophysical Ocean Bouy Development",
+        "description": "Contributed to the development of the biophysical ocean bouy, this device can measure the temperature and ph level of the water. It is also equipped with a GPS module to track the location of the bouy.",
+        "image": "/bouy.jpg",
+        "isClickable": false,
+        "link": ""
+    }
+]
