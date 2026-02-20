@@ -26,5 +26,20 @@
         "image": "/bouy.jpg",
         "isClickable": false,
         "link": ""
-    }
+    },
+     {
+    "title": "LTO-Davao Region Management System",
+    "description": "Driver and vehicle registration monitoring system.",
+    "image": "/Lto-web.png",
+    "isClickable": true,
+    "link": "https://lto-website.vercel.app"
+  },
+
+  {
+    "title": "TransitMaster",
+    "description": "Vehicle scheduling and tracking system",
+    "image": "/transitmaster.png",
+    "isClickable": true,
+    "link": "https://app-transitmaster.vercel.app"
+  }
 ]
