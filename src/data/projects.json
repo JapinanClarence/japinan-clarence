@@ -4,7 +4,7 @@
     "description": "A comprehensive web application for the Philippine Coleopterist Society Inc., featuring a modern React frontend with advanced UI components and a robust Node.js backend API.",
     "image": "/pcsi.png",
     "isClickable": true,
-    "link": "https://pcsi.vercel.app/"
+    "link": "https://philippinecoleopterists.org/"
   },
  
   {
