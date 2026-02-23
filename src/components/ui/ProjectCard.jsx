@@ -14,7 +14,7 @@ export const ProjectCard = ({ data, orientation }) => {
       </div>
       <div>
         <h2 className="font-semibold mb-2">{data.title}</h2>
-        <p className="text-xs">{data.description}</p>
+        <p className="text-xs xl:text-sm">{data.description}</p>
         <div>
           
         </div>

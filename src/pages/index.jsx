@@ -10,6 +10,7 @@ import { FileText } from "lucide-react";
 import { Projects } from "@/components/Projects";
 import { Experience } from "@/components/Experience";
 import { useTheme } from "@/components/theme-provider";
+import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -18,8 +19,8 @@ export default function Home() {
     (theme === "system" &&
       window.document.documentElement.classList.contains("dark"));
   return (
-    <>
-      <div className="antialiased space-y-10 py-10">
+    <div>
+      <div className="relative space-y-10 py-10">
         <Container
           className="pt-10 md:pt-0 md:h-screen flex flex-col md:flex-row md:justify-between gap-10 items-center"
           id="home"
@@ -68,8 +69,8 @@ export default function Home() {
           <Experience />
         </Container>
       </div>
-
-      <BackgroundBeams className="hidden md:flex" />
-    </>
+      
+      {isDark && (<BackgroundBeams className="hidden md:flex" />)}
+    </div>
   );
 }
