@@ -37,7 +37,7 @@ const techStack = [
   },
   {
     icon: PhpIcon,
-    title: "Php",
+    title: "PHP",
   },
   {
     icon: LaravelIcon,
@@ -61,20 +61,20 @@ const techStack = [
   },
   {
     icon: SocketioIcon,
-    title: "Socket.io",
+    title: "Socket.IO",
   },
-  {
-    icon: PostmanIcon,
-    title: "Postman",
-  },
+  // {
+  //   icon: PostmanIcon,
+  //   title: "Postman",
+  // },
   {
     icon: ArduinoIcon,
     title: "Arduino",
   },
-  {
-    icon: GithubIcon,
-    title: "Github",
-  },
+  // {
+  //   icon: GithubIcon,
+  //   title: "Github",
+  // },
 ];
 
 export function TechStack() {

@@ -1,4 +1,4 @@
-import { useTheme } from "../theme-provider";
+import { useTheme } from "../theme/theme-provider";
 
 export const ArduinoIcon = ({ height = 40, width = 40 }) => {
   const { theme } = useTheme();

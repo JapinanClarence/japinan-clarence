@@ -12,7 +12,7 @@ import {
   SheetClose,
 } from "@/components/ui/sheet";
 import { Menu, Moon, Sun } from "lucide-react";
-import { useTheme } from "./theme-provider";
+import { useTheme } from "./theme/theme-provider";
 
 export const NavMain = () => {
   const {theme, setTheme} = useTheme();

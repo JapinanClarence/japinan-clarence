@@ -9,9 +9,9 @@ export const Experience = () => {
         <li className="list-disc list-inside">
           <div>
             <h3 className="font-semibold">Full-stack developer</h3>
-            <p className="text-xs">
-              GreenHome Improvement{" "}
-              <span className="text-end">June 2025 - February 2026</span>
+            <p className="text-xs font-medium">
+              Green Home Improvements
+              <span className="text-end font-normal ml-2">June 2025 - March 2026</span>
             </p>
           </div>
         </li>

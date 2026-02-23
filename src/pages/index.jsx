@@ -9,8 +9,8 @@ import { Container } from "@/components/ui/container";
 import { FileText } from "lucide-react";
 import { Projects } from "@/components/Projects";
 import { Experience } from "@/components/Experience";
-import { useTheme } from "@/components/theme-provider";
-import { BackgroundRippleEffect } from "@/components/ui/background-ripple-effect";
+import { useTheme } from "@/components/theme/theme-provider";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -22,7 +22,7 @@ export default function Home() {
     <div>
       <div className="relative space-y-10 py-10">
         <Container
-          className="pt-10 md:pt-0 md:h-screen flex flex-col md:flex-row md:justify-between gap-10 items-center"
+          className="pt-10 md:pt-0 md:h-screen flex flex-col md:flex-row md:justify-between gap-10 items-start md:items-center"
           id="home"
         >
           <div className="">
@@ -42,14 +42,12 @@ export default function Home() {
               >
                 Get in Touch
               </Button>
-              <Button
-                variant={isDark ? "secondary" : "outline"}
-                size="sm"
-                className=""
-              >
-                <FileText />
-                Resume
-              </Button>
+              <a href="/JapinanResume.pdf">
+                <Button variant={isDark ? "secondary" : "outline"} size="sm">
+                  <FileText />
+                  Resume
+                </Button>
+              </a>
             </div>
           </div>
           <div className="aspect-square w-full md:w-[300px]  h-[300px] overflow-clip z-10 rounded-lg">
@@ -69,8 +67,8 @@ export default function Home() {
           <Experience />
         </Container>
       </div>
-      
-      {isDark && (<BackgroundBeams className="hidden md:flex" />)}
+
+      {isDark && <BackgroundBeams className="hidden md:flex" />}
     </div>
   );
 }

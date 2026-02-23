@@ -1,5 +1,5 @@
 import React from "react";
-import { useTheme } from "../theme-provider";
+import { useTheme } from "../theme/theme-provider";
 
 export const MysqlIcon = ({ width = 40, height = 40 }) => {
     const { theme } = useTheme();
