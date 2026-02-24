@@ -77,7 +77,7 @@ export const NavMobile = () => {
           </a>
         </button>
         <button className="inline-flex items-center justify-center h-10 w-10 transition-colors hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
-          <a href="www.linkedin.com/in/clarence-japinan">
+          <a href="https://linkedin.com/in/clarence-japinan">
             <LinkedinIcon width={25} height={25} />
           </a>
         </button>

@@ -79,7 +79,7 @@ export const NavMain = () => {
             </a>
           </button>
           <button className="inline-flex items-center justify-center rounded-lg h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
-            <a href="www.linkedin.com/in/clarence-japinan">
+            <a href="https://linkedin.com/in/clarence-japinan">
               <LinkedinIcon width={20} height={20} />
             </a>
           </button>
