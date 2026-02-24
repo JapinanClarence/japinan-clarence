@@ -16,7 +16,7 @@ import {
   PostmanIcon,
   VercelIcon,
 } from "@/components/icons";
-import { TechStackCard } from "./ui/TechStackCard";
+import { TechStackCard } from "./ui/techstack-card";
 
 const techStack = [
   {

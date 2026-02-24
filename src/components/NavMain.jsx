@@ -1,9 +1,7 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
-
-import { Home, Menu, Moon, Sun } from "lucide-react";
+import { HomeIcon, MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import { useTheme } from "./theme/theme-provider";
 import { GithubIcon, LinkedinIcon } from "./icons";
 
@@ -90,9 +88,9 @@ export const NavMain = () => {
             onClick={handleClickTheme}
           >
             {isDark ? (
-              <Moon width={20} height={20} />
+              <MoonIcon width={20} height={20} />
             ) : (
-              <Sun width={20} height={20} />
+              <SunIcon width={20} height={20} />
             )}
           </button>
         </div>

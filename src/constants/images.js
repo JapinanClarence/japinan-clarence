@@ -10,7 +10,7 @@ import transitmaster_preview3 from "@/assets/projects/transitmaster-preview3.png
 import timetap_preview1 from "@/assets/projects/timetap-preview.png"
 import timetap_preview2 from "@/assets/projects/timetap-preview2.png"
 import timetap_preview3 from "@/assets/projects/timetap-preview3.png"
-import hero_image from "@/assets/graduation-pic.jpg";
+import hero_image from "@/assets/clarence-1.jpg";
 
 export const images = {
     pcsi_preview1,

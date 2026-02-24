@@ -19,9 +19,9 @@ export default function Home() {
       window.document.documentElement.classList.contains("dark"));
   return (
     <div>
-      <div className="relative space-y-10 py-10"  id="home">
+      <div className="relative space-y-10 py-10 md:py-0"  id="home">
         <Container
-          className="mt-10 md:h-screen flex flex-col md:flex-row justify-center md:justify-between gap-10 items-start md:items-center"
+          className="mt-10 md:mt-0 md:h-screen flex flex-col md:flex-row justify-center md:justify-between gap-10 items-start md:items-center"
         >
           <div className="">
             <h1 className="relative z-10 text-4xl  xl:text-6xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-start font-sans font-bold">

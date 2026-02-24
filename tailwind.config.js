@@ -84,7 +84,7 @@ module.exports = {
             height: "0",
           },
         },
-        "aurora": {
+        aurora: {
           from: {
             backgroundPosition: "50% 50%, 50% 50%",
           },
@@ -92,9 +92,17 @@ module.exports = {
             backgroundPosition: "350% 50%, 350% 50%",
           },
         },
-        "zoomSlow": {
+        zoomSlow: {
           "0%": { transform: "scale(1)" },
           "100%": { transform: "scale(1.1)" },
+        },
+        slideLeft: {
+          "0%": { transform: "trasnslateX(0%)" },
+          "100%": { transform: "translateX(100%)" },
+        },
+        slideInRight: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0)" },
         },
       },
       animation: {
@@ -102,6 +110,8 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "zoom-slow": "zoomSlow 4s linear forwards",
+        "slide-left": "slideLeft 4s ease-in-out forwards",
+        "slide-in-right": "slideInRight 1s ease-in-out forwards",
       },
     },
   },

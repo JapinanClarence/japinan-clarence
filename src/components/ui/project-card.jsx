@@ -36,6 +36,7 @@ const ProjectCardImage = ({ images, title }) => {
         </div>
       ))}
 
+      <div className="opacity-0 hover:opacity-100 transition-opacity ease-in-out absolute bg-white/10 h-full w-full" />
       {/* Slide Indicators: Only visible if there are multiple images */}
       {images?.length > 1 && (
         <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
@@ -43,9 +44,7 @@ const ProjectCardImage = ({ images, title }) => {
             <div
               key={i}
               className={`h-1.5 rounded-full transition-all duration-500 ${
-                i === currentIndex 
-                  ? "w-6 bg-white" 
-                  : "w-1.5 bg-white/40"
+                i === currentIndex ? "w-6 bg-white" : "w-1.5 bg-white/40"
               }`}
             />
           ))}
@@ -54,13 +53,14 @@ const ProjectCardImage = ({ images, title }) => {
     </div>
   );
 };
+
 export const ProjectCard = ({ data, orientation }) => {
   const { theme } = useTheme();
   const isDark =
     theme === "dark" ||
     (theme === "system" &&
       window.document.documentElement.classList.contains("dark"));
-  
+
   return (
     <div
       className={`${orientation === "reverse" && "md:flex-row-reverse"} flex flex-col md:flex-row gap-5`}
@@ -71,7 +71,7 @@ export const ProjectCard = ({ data, orientation }) => {
         <img src={data.image} alt="" className="h-full w-full object-cover" />
       </div> */}
       <ProjectCardImage images={data.image} title={data.title} />
-     
+
       <div
         className={
           "group md:hover:translate-x-2 transition-translate duration-300 ease-out md:w-1/2"

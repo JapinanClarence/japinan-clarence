@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useTheme } from "./theme/theme-provider";
-import { Button } from "./ui/button";
-import { Home, Menu, Moon, Sun } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons";
 import { HomeIcon, MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import { cn } from "@/lib/utils";
@@ -46,7 +44,7 @@ export const NavMobile = () => {
           : "opacity-0 -translate-y-4 pointer-events-none",
       )}
     >
-      <div className="rounded-lg bg-gradient-to-r from-neutral-200/30 to-neutral-600/30 backdrop-blur-sm border border-zinc-300/40  dark:border-zinc-500">
+      <div className="rounded-lg space-x-2 bg-gradient-to-r from-neutral-200/30 to-neutral-600/30 backdrop-blur-sm border border-zinc-300/40  dark:border-zinc-500">
         <button
           className="inline-flex items-center justify-center rounded-lg h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
           onClick={() => {
@@ -55,16 +53,16 @@ export const NavMobile = () => {
             });
           }}
         >
-          <HomeIcon height={25} width={25} className=" text-primary" />
+          <HomeIcon height={30} width={30} className=" text-primary" />
         </button>
         <button className="inline-flex items-center justify-center rounded-lg h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
           <a href="https://github.com/JapinanClarence">
-            <GithubIcon width={25} height={25} />
+            <GithubIcon width={30} height={30} />
           </a>
         </button>
         <button className="inline-flex items-center justify-center rounded-lg h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
           <a href="www.linkedin.com/in/clarence-japinan-587197266">
-            <LinkedinIcon width={25} height={25} />
+            <LinkedinIcon width={30} height={30} />
           </a>
         </button>
         <button
@@ -72,9 +70,9 @@ export const NavMobile = () => {
           onClick={handleClickTheme}
         >
           {isDark ? (
-            <MoonIcon width={25} height={25} />
+            <MoonIcon width={30} height={30} />
           ) : (
-            <SunIcon width={25} height={25} />
+            <SunIcon width={30} height={30} />
           )}
         </button>
       </div>

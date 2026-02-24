@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { ProjectCard } from "./ui/ProjectCard";
+import { ProjectCard } from "./ui/project-card";
 import { images } from "@/constants/images";
+import { cn } from "@/lib/utils";
 
 const projects = [
   {
@@ -48,25 +49,17 @@ const projects = [
 ];
 
 export function Projects() {
-  const [projectData, setProjectData] = useState([]);
-  useEffect(() => {
-    setProjectData(projects);
-  }, [projects]);
   return (
     <div className="" id="projects">
-      <h1 className="text-start text-lg font-semibold mb-5">Projects</h1>
+      <h1 className="text-start text-lg font-semibold mb-5 ">Projects</h1>
       <h2>Here are some of the projects I have worked on:</h2>
       <div className="mt-5 flex flex-col  gap-5">
-        {projectData.map((item, index) => {
-          const isEven = index % 2 === 0;
-          return (
-            <ProjectCard
-              key={index}
-              data={item}
-              orientation={isEven && "reverse"}
-            />
-          );
-        })}
+        {projects.map((item, index) => (
+          <ProjectCard
+            data={item}
+            orientation={index % 2 === 0 ? "reverse" : "normal"}
+          />
+        ))}
       </div>
     </div>
   );
