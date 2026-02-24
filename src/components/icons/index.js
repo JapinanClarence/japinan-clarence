@@ -13,3 +13,4 @@ export * from "./socketio-icon";
 export * from "./arduino-icon";
 export * from "./postman-icon";
 export * from "./vercel-icon";
+export * from "./linkedin-icon";

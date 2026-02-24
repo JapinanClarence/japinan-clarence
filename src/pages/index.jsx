@@ -22,7 +22,7 @@ export default function Home() {
     <div>
       <div className="relative space-y-10 py-10">
         <Container
-          className="pt-10 md:pt-0 md:h-screen flex flex-col md:flex-row md:justify-between gap-10 items-start md:items-center"
+          className="mt-10 md:h-screen flex flex-col md:flex-row justify-center md:justify-between gap-10 items-start md:items-center"
           id="home"
         >
           <div className="">
@@ -30,7 +30,7 @@ export default function Home() {
               JapinanClarence
             </h1>
 
-            <div className="text-white md:text-xl">
+            <div className=" md:text-xl">
               Full-stack web developer
             </div>
             <div className="mt-10 z-10 relative flex items-center  space-x-2">

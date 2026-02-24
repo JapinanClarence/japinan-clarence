@@ -79,7 +79,7 @@ const techStack = [
 
 export function TechStack() {
   return (
-    <div className="dark:text-white  border-neutral-700">
+    <div className=" border-neutral-700">
       <h1 className="text-start text-lg font-semibold mb-5">Tech Stack</h1>
       <div className="grid gap-5  grid-cols-2 md:grid-cols-4">
         {techStack.map((tech, i) => (
