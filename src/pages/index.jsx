@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/graduation-pic.jpg";
-import data from "@/data/data.json";
+import { images } from "@/constants/images";
 import { TechStack } from "@/components/TechStack";
 import { AboutSection } from "@/components/AboutSection";
 import { Container } from "@/components/ui/container";
@@ -10,7 +9,7 @@ import { FileText } from "lucide-react";
 import { Projects } from "@/components/Projects";
 import { Experience } from "@/components/Experience";
 import { useTheme } from "@/components/theme/theme-provider";
-import { Link } from "react-router-dom";
+
 
 export default function Home() {
   const { theme } = useTheme();
@@ -50,11 +49,11 @@ export default function Home() {
             </div>
           </div>
           <div className="aspect-square w-full md:w-[300px]  h-[300px] overflow-clip z-10 rounded-lg">
-            <img src={heroImage} alt="" className=" object-cover" />
+            <img src={images.hero_image} alt="" className=" object-cover" />
           </div>
         </Container>
         <Container>
-          <AboutSection data={data} />
+          <AboutSection />
         </Container>
         <Container>
           <TechStack />

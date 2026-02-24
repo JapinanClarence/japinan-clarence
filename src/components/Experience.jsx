@@ -1,5 +1,17 @@
 import React from "react";
-import experience from "@/data/experience";
+
+const experience = [
+  {
+    role: "Full-stack developer",
+    company: "Green Home Improvements",
+    duration: "June 2025 - March 2026",
+  },
+  {
+    role: "Full-stack developer",
+    company: "Camillians Home Health Services",
+    duration: "June 2025 - October 2026",
+  },
+];
 
 export const Experience = () => {
   return (
