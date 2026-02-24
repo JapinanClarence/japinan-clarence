@@ -9,7 +9,7 @@ import { FileText } from "lucide-react";
 import { Projects } from "@/components/Projects";
 import { Experience } from "@/components/Experience";
 import { useTheme } from "@/components/theme/theme-provider";
-
+import { BackgroundBeamsLight } from "@/components/ui/background-beams-light";
 
 export default function Home() {
   const { theme } = useTheme();
@@ -19,18 +19,14 @@ export default function Home() {
       window.document.documentElement.classList.contains("dark"));
   return (
     <div>
-      <div className="relative space-y-10 py-10 md:py-0"  id="home">
-        <Container
-          className="mt-10 md:mt-0 md:h-screen flex flex-col md:flex-row justify-center md:justify-between gap-10 items-start md:items-center"
-        >
+      <div className="relative space-y-10 py-10 md:py-0" id="home">
+        <Container className="mt-10 md:mt-0 md:h-screen flex flex-col md:flex-row justify-center md:justify-between gap-10 items-start md:items-center">
           <div className="">
             <h1 className="relative z-10 text-4xl  xl:text-6xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-start font-sans font-bold">
               JapinanClarence
             </h1>
 
-            <div className=" md:text-xl">
-              Full-stack web developer
-            </div>
+            <div className=" md:text-xl">Full-stack web developer</div>
             <div className="mt-10 z-10 relative flex items-center  space-x-2">
               <Button
                 size="sm"
@@ -66,7 +62,11 @@ export default function Home() {
         </Container>
       </div>
 
-      {isDark && <BackgroundBeams className="hidden md:flex" />}
+      {isDark ? (
+        <BackgroundBeams className="hidden md:flex" />
+      ) : (
+        <BackgroundBeamsLight className="hidden md:flex" />
+      )}
     </div>
   );
 }
