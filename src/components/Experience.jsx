@@ -17,7 +17,7 @@ export const Experience = () => {
 
             <div className="flex flex-col gap-1">
               {/* Header Row */}
-              <div className="flex  flex-row justify-between items-center">
+              <div className="flex flex-col  md:flex-row md:justify-between md:items-center">
                 <h3 className="font-bold text-base md:text-md tracking-tight">
                   {data.role}
                 </h3>
