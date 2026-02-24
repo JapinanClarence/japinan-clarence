@@ -48,7 +48,7 @@ export const NavMobile = () => {
     >
       <div className="rounded-lg bg-gradient-to-r from-neutral-200/30 to-neutral-600/30 backdrop-blur-sm border border-zinc-300/40  dark:border-zinc-500">
         <button
-          className="inline-flex items-center justify-center rounded-full h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+          className="inline-flex items-center justify-center rounded-lg h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
           onClick={() => {
             document.getElementById("home").scrollIntoView({
               behavior: "smooth",
@@ -57,18 +57,18 @@ export const NavMobile = () => {
         >
           <HomeIcon height={25} width={25} className=" text-primary" />
         </button>
-        <button className="inline-flex items-center justify-center rounded-full h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
+        <button className="inline-flex items-center justify-center rounded-lg h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
           <a href="https://github.com/JapinanClarence">
             <GithubIcon width={25} height={25} />
           </a>
         </button>
-        <button className="inline-flex items-center justify-center rounded-full h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
+        <button className="inline-flex items-center justify-center rounded-lg h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
           <a href="www.linkedin.com/in/clarence-japinan-587197266">
             <LinkedinIcon width={25} height={25} />
           </a>
         </button>
         <button
-          className="inline-flex items-center justify-center rounded-full h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+          className="inline-flex items-center justify-center rounded-lg h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
           onClick={handleClickTheme}
         >
           {isDark ? (

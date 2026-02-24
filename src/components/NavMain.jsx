@@ -75,18 +75,18 @@ export const NavMain = () => {
           </Button> */}
         </div>
         <div>
-          <button className="inline-flex items-center justify-center rounded-full h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
+          <button className="inline-flex items-center justify-center rounded-lg h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
             <a href="https://github.com/JapinanClarence">
               <GithubIcon width={20} height={20} />
             </a>
           </button>
-          <button className="inline-flex items-center justify-center rounded-full h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
+          <button className="inline-flex items-center justify-center rounded-lg h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
             <a href="www.linkedin.com/in/clarence-japinan-587197266">
               <LinkedinIcon width={20} height={20} />
             </a>
           </button>
           <button
-            className="inline-flex items-center justify-center rounded-full h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+            className="inline-flex items-center justify-center rounded-lg h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
             onClick={handleClickTheme}
           >
             {isDark ? (
