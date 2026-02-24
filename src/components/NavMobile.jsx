@@ -39,7 +39,7 @@ export const NavMobile = () => {
   return (
     <div
       className={cn(
-        "fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ease-in-out w-fit",
+        "md:hidden fixed top-4 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 ease-in-out w-fit",
         // Toggles visibility based on scroll state
         isVisible
           ? "opacity-100 translate-y-0 pointer-events-auto"
@@ -55,16 +55,16 @@ export const NavMobile = () => {
             });
           }}
         >
-          <HomeIcon height={20} width={20} className=" text-primary" />
+          <HomeIcon height={25} width={25} className=" text-primary" />
         </button>
         <button className="inline-flex items-center justify-center rounded-full h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
           <a href="https://github.com/JapinanClarence">
-            <GithubIcon width={20} height={20} />
+            <GithubIcon width={25} height={25} />
           </a>
         </button>
         <button className="inline-flex items-center justify-center rounded-full h-10 w-10 transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
           <a href="www.linkedin.com/in/clarence-japinan-587197266">
-            <LinkedinIcon width={20} height={20} />
+            <LinkedinIcon width={25} height={25} />
           </a>
         </button>
         <button
@@ -72,9 +72,9 @@ export const NavMobile = () => {
           onClick={handleClickTheme}
         >
           {isDark ? (
-            <MoonIcon width={20} height={20} />
+            <MoonIcon width={25} height={25} />
           ) : (
-            <SunIcon width={20} height={20} />
+            <SunIcon width={25} height={25} />
           )}
         </button>
       </div>
