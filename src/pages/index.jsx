@@ -48,7 +48,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="aspect-square w-full md:w-[300px]  h-[300px] overflow-clip z-10 rounded-lg">
+          <div className="aspect-square w-full md:w-[300px]  h-[300px] overflow-clip z-10 shadow-sm rounded-lg">
             <img src={images.hero_image} alt="" className=" object-cover" />
           </div>
         </Container>

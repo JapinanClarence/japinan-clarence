@@ -18,7 +18,7 @@ const projects = [
       "Contributed to the development of the biophysical ocean bouy, this device can measure the temperature and ph level of the water. It is also equipped with a GPS module to track the location of the bouy.",
     image: [images.bouy_preview1, images.bouy_preview2, images.bouy_preview3],
     isClickable: false,
-    githubLink: "",
+    githubLink: "https://github.com/JapinanClarence/Biophysical-Ocean-Buoy.git",
     tech: ["Arduino", "Tinkercad", "ESP32", "NEO-6M GPS", "SIM800L GSM"],
   },
   {
@@ -56,6 +56,7 @@ export function Projects() {
       <div className="mt-5 flex flex-col  gap-5">
         {projects.map((item, index) => (
           <ProjectCard
+            key={index}
             data={item}
             orientation={index % 2 === 0 ? "reverse" : "normal"}
           />

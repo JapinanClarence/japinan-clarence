@@ -98,15 +98,21 @@ export const ProjectCard = ({ data, orientation }) => {
           ))}
         </div>
         <div className="mt-2 overflow-hidden">
-          <button className="opacity-0 group-hover:opacity-100 transition-all ease-in inline-flex text-sm font-medium items-center gap-1 px-2.5 py-0.5 bg-gradient-to-r hover:bg-gradient-to-br from-neutral-200/10 to-neutral-600/10 backdrop-blur-md border rounded-full">
+          <button className="opacity-0 group-hover:opacity-100 transition-all ease-in text-sm font-medium px-2.5 py-0.5 bg-gradient-to-r hover:bg-gradient-to-br from-neutral-200/10 to-neutral-600/10 backdrop-blur-md border rounded-full">
             {data.websiteLink ? (
-              <>
+              <a
+                href={data.websiteLink}
+                className="inline-flex  items-center gap-1"
+              >
                 <ExternalLink className="size-3.5" /> view demo
-              </>
+              </a>
             ) : (
-              <>
+              <a
+                href={data.githubLink}
+                className="inline-flex  items-center gap-1"
+              >
                 <Github className="size-3.5" /> view source
-              </>
+              </a>
             )}
           </button>
         </div>
