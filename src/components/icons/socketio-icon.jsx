@@ -1,16 +1,9 @@
-import { useTheme } from "../theme/theme-provider";
 
 export const SocketioIcon = ({ height = 40, width = 40 }) => {
-  const { theme } = useTheme();
-  const isDark =
-    theme === "dark" ||
-    (theme === "system" &&
-      window.document.documentElement.classList.contains("dark"));
-
-  const fill = isDark ? "#ffffff" : "#000000";
+  
   return (
     <svg
-      fill={fill}
+      fill="currentColor"
       viewBox="0 0 24 24"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
