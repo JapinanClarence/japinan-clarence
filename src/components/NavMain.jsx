@@ -88,9 +88,9 @@ export const NavMain = () => {
             onClick={handleClickTheme}
           >
             {isDark ? (
-              <MoonIcon width={20} height={20} />
-            ) : (
               <SunIcon width={20} height={20} />
+            ) : (
+              <MoonIcon width={20} height={20} />
             )}
           </button>
         </div>
