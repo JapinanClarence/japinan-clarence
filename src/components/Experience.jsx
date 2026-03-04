@@ -9,7 +9,7 @@ const experience = [
   {
     role: "Full-stack developer",
     company: "Camillians Home Health Services",
-    duration: "June 2025 - October 2026",
+    duration: "June 2025 - October 2025",
   },
 ];
 
