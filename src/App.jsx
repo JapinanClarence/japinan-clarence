@@ -2,7 +2,7 @@ import { Footer } from "./components/Footer";
 import {NavMain} from "./components/NavMain";
 import { NavMobile } from "./components/NavMobile";
 import Home from "./pages";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 function App() {
 
   return (
