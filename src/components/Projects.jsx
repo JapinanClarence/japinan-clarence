@@ -42,8 +42,8 @@ const projects = [
       images.timetap_preview2,
       images.timetap_preview3,
     ],
-    inProgress: true,
-    githubLink: "https://github.com/JapinanClarence/TimeTap.git",
+    inProgress: false,
+    websiteLink: "https://timetap-v8s4.onrender.com",
     tech: ["PHP", "Laravel", "ReactJs", "MySQL", "InertiaJS"],
   },
 ];
