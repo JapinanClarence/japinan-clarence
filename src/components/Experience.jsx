@@ -2,6 +2,11 @@ import React from "react";
 
 const experience = [
   {
+    role: "Mobile App Developer",
+    company: "Poseidon Distribution OPC",
+    duration: "April 2026 - Present",
+  },
+  {
     role: "Full-stack developer",
     company: "Green Home Improvements",
     duration: "June 2025 - March 2026",
