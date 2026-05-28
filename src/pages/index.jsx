@@ -59,7 +59,7 @@ export default function Home() {
               >
                 Get in Touch
               </Button>
-              <a href="/JapinanResume.pdf">
+              <a href="https://docs.google.com/document/d/10b-B5XwK_Io6qiyzOAsD3oY1cG-GkxpP/edit?usp=sharing&ouid=100613609772722422706&rtpof=true&sd=true">
                 <Button variant={isDark ? "secondary" : "outline"} size="sm">
                   <FileText />
                   Resume
