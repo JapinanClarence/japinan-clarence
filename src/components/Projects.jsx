@@ -15,7 +15,7 @@ const projects = [
   {
     title: "Biophysical Ocean Bouy Development",
     description:
-      "Contributed to the development of the biophysical ocean bouy, this device can measure the temperature and ph level of the water. It is also equipped with a GPS module to track the location of the bouy.",
+      "Designed and developed the hardware device for the Biophysical Ocean Buoy (BoB), utilizing Arduino and ESP32 microcontrollers to capture live water quality metrics and provide continuous geospatial tracking.",
     image: [images.bouy_preview1, images.bouy_preview2, images.bouy_preview3],
     isClickable: false,
     githubLink: "https://github.com/JapinanClarence/Biophysical-Ocean-Buoy.git",
