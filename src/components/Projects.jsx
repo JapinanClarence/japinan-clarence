@@ -5,6 +5,15 @@ import { cn } from "@/lib/utils";
 
 const projects = [
   {
+    title: "RGAN Website",
+    description:
+      "Developed the complete foundational content suite for the Region XI Gender and Development Advocates Network (RGAN XI), a Philippines-based non-profit advancing gender equality and inclusive development, and its affiliated academic publication, the Gender Research & Policy Journal (GRPJ).",
+    image: [images.rgan_website],
+    websiteLink: "https://rgan-website-web.vercel.app/",
+    inProgress: true,
+    tech: ["NextJs", "Supabase", "TypeScript", "Tailwind CSS"],
+  },
+  {
     title: "PCSI",
     description:
       "A comprehensive web application for the Philippine Coleopterist Society Inc., featuring a modern React frontend with advanced UI components and a robust Node.js backend API.",

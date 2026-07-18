@@ -11,6 +11,7 @@ import timetap_preview1 from "@/assets/projects/timetap-preview.png"
 import timetap_preview2 from "@/assets/projects/timetap-preview2.png"
 import timetap_preview3 from "@/assets/projects/timetap-preview3.png"
 import hero_image from "@/assets/clarence-1.jpg";
+import rgan_website from "@/assets/projects/rgan-website.png"
 
 export const images = {
     pcsi_preview1,
@@ -25,5 +26,6 @@ export const images = {
     timetap_preview1,
     timetap_preview2,
     timetap_preview3,
-    hero_image
+    hero_image,
+    rgan_website
 }
