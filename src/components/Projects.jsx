@@ -8,7 +8,7 @@ const projects = [
     title: "RGAN Website",
     description:
       "Developed the complete foundational content suite for the Region XI Gender and Development Advocates Network (RGAN XI), a Philippines-based non-profit advancing gender equality and inclusive development, and its affiliated academic publication, the Gender Research & Policy Journal (GRPJ).",
-    image: [images.rgan_website],
+    image: [images.rgan_website, images.rgan_website2, images.rgan_website3],
     websiteLink: "https://rgan-website-web.vercel.app/",
     inProgress: true,
     tech: ["NextJs", "Supabase", "TypeScript", "Tailwind CSS"],
