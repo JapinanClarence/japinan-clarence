@@ -59,7 +59,7 @@ export default function Home() {
               >
                 Get in Touch
               </Button>
-              <a href="https://drive.google.com/file/d/1zwHaBoRpAkgnxIZ4FmWl3rRxO1T4gPp4/view?usp=sharing">
+              <a href="https://drive.google.com/file/d/1GGx6U6UDhzsBwt8nrbtauomDzHX95uI9/view?usp=sharing">
                 <Button variant={isDark ? "secondary" : "outline"} size="sm">
                   <FileText />
                   Resume
