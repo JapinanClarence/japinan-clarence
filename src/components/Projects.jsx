@@ -4,22 +4,35 @@ import { images } from "@/constants/images";
 import { cn } from "@/lib/utils";
 
 const projects = [
-  {
-    title: "RGAN Website",
+  // {
+  //   title: "RGAN Website",
+  //   description:
+  //     "Developed the complete foundational content suite for the Region XI Gender and Development Advocates Network (RGAN XI), a Philippines-based non-profit advancing gender equality and inclusive development, and its affiliated academic publication, the Gender Research & Policy Journal (GRPJ).",
+  //   image: [images.rgan_website, images.rgan_website2, images.rgan_website3],
+  //   websiteLink: "https://rgan-website-web.vercel.app/",
+  //   inProgress: true,
+  //   tech: ["NextJs", "Supabase", "TypeScript", "Tailwind CSS"],
+  // },
+  // {
+  //   title: "PCSI",
+  //   description:
+  //     "A comprehensive web application for the Philippine Coleopterist Society Inc., featuring a modern React frontend with advanced UI components and a robust Node.js backend API.",
+  //   image: [images.pcsi_preview1, images.pcsi_preview2, images.pcsi_preview3],
+  //   websiteLink: "https://philippinecoleopterists.org/",
+  //   tech: ["ReactJs", "ExpressJs", "MongoDb", "Tailwind CSS"],
+  // },
+   {
+    title: "TimeTap",
     description:
-      "Developed the complete foundational content suite for the Region XI Gender and Development Advocates Network (RGAN XI), a Philippines-based non-profit advancing gender equality and inclusive development, and its affiliated academic publication, the Gender Research & Policy Journal (GRPJ).",
-    image: [images.rgan_website, images.rgan_website2, images.rgan_website3],
-    websiteLink: "https://rgan-website-web.vercel.app/",
-    inProgress: true,
-    tech: ["NextJs", "Supabase", "TypeScript", "Tailwind CSS"],
-  },
-  {
-    title: "PCSI",
-    description:
-      "A comprehensive web application for the Philippine Coleopterist Society Inc., featuring a modern React frontend with advanced UI components and a robust Node.js backend API.",
-    image: [images.pcsi_preview1, images.pcsi_preview2, images.pcsi_preview3],
-    websiteLink: "https://philippinecoleopterists.org/",
-    tech: ["ReactJs", "ExpressJs", "MongoDb", "Tailwind CSS"],
+      "TimeTap is a QR-based attendance management system designed to streamline event check-ins and participant tracking. The platform integrates geo-fence technology to validate user location during attendance, ensuring that check-ins occur only within the authorized event area.",
+    image: [
+      images.timetap_preview1,
+      images.timetap_preview2,
+      images.timetap_preview3,
+    ],
+    inProgress: false,
+    websiteLink: "https://timetap.japinanc.space",
+    tech: ["PHP", "Laravel", "ReactJs", "MySQL", "InertiaJS"],
   },
   {
     title: "Biophysical Ocean Bouy Development",
@@ -42,19 +55,7 @@ const projects = [
     websiteLink: "https://app-transitmaster.vercel.app",
     tech: ["ExpressJs", "ReactJs", "MongoDb", "Mapbox", "Socket.IO", "ESP32"],
   },
-  {
-    title: "TimeTap",
-    description:
-      "TimeTap is a QR-based attendance management system designed to streamline event check-ins and participant tracking. The platform integrates geo-fence technology to validate user location during attendance, ensuring that check-ins occur only within the authorized event area.",
-    image: [
-      images.timetap_preview1,
-      images.timetap_preview2,
-      images.timetap_preview3,
-    ],
-    inProgress: false,
-    websiteLink: "https://timetap.japinanc.space",
-    tech: ["PHP", "Laravel", "ReactJs", "MySQL", "InertiaJS"],
-  },
+ 
 ];
 
 export function Projects() {
