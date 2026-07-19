@@ -7,22 +7,22 @@ const experience = [
   //   duration: "April 2026 - Present",
   // },
   {
-    role: "Full-stack developer | Freelance",
+    role: "Full Stack Developer | Freelance",
     company: "RGAN XI (Region XI GAD Advocates Network)",
     duration: "July 2026 - Present",
   },
   {
-    role: "Full-stack developer",
+    role: "Full Stack Developer",
     company: "Green Home Improvements",
     duration: "June 2025 - March 2026",
   },
   {
-    role: "Full-stack developer | Freelance",
+    role: "Full Stack Developer | Freelance",
     company: "Philippine Coleopterists Society Inc.",
     duration: "September 2025 - December 2025",
   },
   {
-    role: "Full-stack developer",
+    role: "Full Stack Developer",
     company: "Camillians Home Health Services",
     duration: "June 2025 - October 2025",
   },
