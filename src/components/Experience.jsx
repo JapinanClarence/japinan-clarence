@@ -7,6 +7,11 @@ const experience = [
   //   duration: "April 2026 - Present",
   // },
   {
+    role: "Full Stack Developer",
+    company: "A3Brands LLC",
+    duration: "July 2026 - Present",
+  },
+  {
     role: "Full Stack Developer | Freelance",
     company: "RGAN XI (Region XI GAD Advocates Network)",
     duration: "July 2026 - Present",
