@@ -9,7 +9,7 @@ const experience = [
   {
     role: "Full Stack Developer",
     company: "A3Brands LLC",
-    duration: "July 2026 - Present",
+    duration: "September 2026 - Present",
   },
   {
     role: "Full Stack Developer | Freelance",
