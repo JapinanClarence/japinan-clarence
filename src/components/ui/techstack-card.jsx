@@ -4,7 +4,7 @@ export function TechStackCard({ title, icon: Icon }) {
   return (
     <div
       className={
-        "group flex items-center gap-3 rounded-lg border border-border bg-background px-4 py-3.5 shadow-sm " +
+        "group flex shrink-0 items-center gap-3 rounded-lg border border-border bg-background px-4 py-3.5 shadow-sm " +
         "transition-all duration-200 hover:-translate-y-0.5 hover:border-foreground/30 hover:shadow-md"
       }
     >

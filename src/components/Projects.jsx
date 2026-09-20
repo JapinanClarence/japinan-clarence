@@ -59,13 +59,13 @@ export const projects = [
 
 export function Projects() {
   return (
-    <div className="scroll-mt-24 md:scroll-mt-28" id="projects">
+    <div className="scroll-mt-24 md:scroll-mt-28 mt-20" id="projects">
       <SectionHeader
         backgroundText="Projects"
         title="Selected Work"
         subtitle="Here are some of the projects I have worked on."
       />
-      <div className="mt-8 flex flex-col  gap-5">
+      <div className="mt-8 flex flex-col  gap-10">
         {projects.map((item, index) => (
           <ProjectCard
             key={index}

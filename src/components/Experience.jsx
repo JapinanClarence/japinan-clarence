@@ -37,7 +37,7 @@ export const experience = [
 
 export const Experience = () => {
   return (
-    <div className="text-primary scroll-mt-24 md:scroll-mt-28" id="experience">
+    <div className="text-primary scroll-mt-24 md:scroll-mt-28 mt-20" id="experience">
       <SectionHeader
         backgroundText="Experience"
         title="Experience"
