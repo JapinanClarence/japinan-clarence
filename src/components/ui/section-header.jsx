@@ -15,6 +15,7 @@ export function SectionHeader({
   backgroundText,
   title,
   subtitle,
+  meta,
   align = "center",
   className,
 }) {
@@ -41,10 +42,23 @@ export function SectionHeader({
       )}
 
       <div className="relative">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase tracking-tight">
-          <span className="text-muted-foreground/60">/</span>
-          {title}
-        </h2>
+        <div
+          className={cn(
+            "flex items-baseline gap-3",
+            meta && align !== "center" ? "justify-between" : "justify-center",
+            align !== "center" && !meta && "justify-start"
+          )}
+        >
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase tracking-tight">
+            <span className="text-muted-foreground/60">/</span>
+            {title}
+          </h2>
+          {meta && (
+            <span className="shrink-0 text-sm md:text-base text-muted-foreground">
+              {meta}
+            </span>
+          )}
+        </div>
         {subtitle && (
           <p
             className={cn(

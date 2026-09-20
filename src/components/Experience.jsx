@@ -1,4 +1,5 @@
 
+import { cn } from "@/lib/utils";
 import { SectionHeader } from "./ui/section-header";
 
 export const experience = [
@@ -37,13 +38,14 @@ export const experience = [
 export const Experience = () => {
   return (
     <div className="text-primary scroll-mt-24 md:scroll-mt-28" id="experience">
-   <SectionHeader
+      <SectionHeader
         backgroundText="Experience"
         title="Experience"
+        align="center"
         subtitle="+1 year of experience"
       />
 
-      <div className="relative space-y-8">
+      <div className="relative mt-8">
         {/* The Vertical Line - Centered relative to the 12px (size-3) dots */}
         <div className="absolute left-[5px] top-2 h-full w-[1px] bg-slate-200 dark:bg-zinc-800" />
 
@@ -52,28 +54,29 @@ export const Experience = () => {
             {/* The Bullet - Perfectly centered on the line */}
             <div className="absolute left-0 top-1.5 size-2.5 rounded-sm dark:bg-white bg-zinc-950 z-10 transition-transform group-hover:scale-125 " />
 
-            <div className="flex flex-col gap-1">
-              {/* Header Row */}
-              <div className="flex flex-col  md:flex-row md:justify-between md:items-center">
-                <h3 className="font-bold text-base md:text-md tracking-tight">
-                  {data.role}
+            <div
+              className={cn(
+                "flex flex-col gap-1",
+                "sm:flex-row sm:items-center sm:justify-between sm:gap-4",
+                index !== experience.length - 1
+                  ? "pb-5 mb-5 border-b border-zinc-200 dark:border-zinc-800"
+                  : "pb-0"
+              )}
+            >
+              {/* Company + Role */}
+              <div>
+                <h3 className="font-bold text-base md:text-lg tracking-tight">
+                  {data.company}
                 </h3>
-                <span className="text-xs md:text-sm font-semibold text-zinc-500 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-900 px-2 py-0.5 rounded-lg w-fit">
-                  {data.duration}
-                </span>
+                <p className="text-sm text-muted-foreground mt-0.5">
+                  {data.role}
+                </p>
               </div>
 
-              {/* Company Info */}
-              <p className="text-sm font-medium text-primary/80 uppercase tracking-wide">
-                {data.company}
-              </p>
-
-              {/* Optional: Add a small description if your data has it */}
-              {data.other && (
-                <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                  {data.other}
-                </p>
-              )}
+              {/* Duration */}
+              <span className="text-xs md:text-sm text-muted-foreground shrink-0">
+                {data.duration}
+              </span>
             </div>
           </div>
         ))}
