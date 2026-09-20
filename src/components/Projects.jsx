@@ -3,7 +3,7 @@ import { ProjectCard } from "./ui/project-card";
 import { images } from "@/constants/images";
 import { cn } from "@/lib/utils";
 
-const projects = [
+export const projects = [
   // {
   //   title: "RGAN Website",
   //   description:
@@ -60,7 +60,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <div className="" id="projects">
+    <div className="scroll-mt-24 md:scroll-mt-28" id="projects">
       <h1 className="text-start text-lg font-semibold mb-5 ">Projects</h1>
       <h2>Here are some of the projects I have worked on:</h2>
       <div className="mt-5 flex flex-col  gap-5">

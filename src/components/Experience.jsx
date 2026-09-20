@@ -1,6 +1,6 @@
 import React from "react";
 
-const experience = [
+export const experience = [
   // {
   //   role: "Mobile App Developer",
   //   company: "Poseidon Distribution OPC",
@@ -35,7 +35,7 @@ const experience = [
 
 export const Experience = () => {
   return (
-    <div className="text-primary" id="projects">
+    <div className="text-primary scroll-mt-24 md:scroll-mt-28" id="experience">
       <h1 className="text-start text-lg font-semibold mb-5">Experience</h1>
 
       <div className="relative space-y-8">

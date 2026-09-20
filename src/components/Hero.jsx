@@ -1,4 +1,4 @@
-
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { images } from "@/constants/images";
 import { FileText, Mail, ArrowUpRight } from "lucide-react";
@@ -22,7 +22,7 @@ const socials = [
 
 export function Hero() {
   return (
-    <div className="relative w-full pt-6 md:pt-10 pb-10" id="home">
+    <div className="relative w-full pt-6 md:pt-10 pb-10 scroll-mt-24 md:scroll-mt-28" id="home">
       {/* Status badge */}
       <div className="flex justify-center md:justify-start">
         <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background/60 backdrop-blur px-4 py-1.5 text-xs md:text-sm font-medium shadow-sm">
@@ -51,23 +51,18 @@ export function Hero() {
         </h1>
       </div>
 
-      {/* Portrait — soft-masked so it can drop in cleanly once a cutout photo is ready */}
-      <div className="relative mx-auto md:mx-0 md:ml-[28%] xl:ml-[30%] -mt-2 md:-mt-8 w-[62%] sm:w-[48%] md:w-[34%] xl:w-[28%]">
+      {/* Portrait — real transparent cutout, bleeds to the bottom like the reference */}
+      <div className="relative mx-auto md:mx-0 md:ml-[27%] xl:ml-[29%] mt-0 md:-mt-6 xl:-mt-8 w-[62%] sm:w-[48%] md:w-[36%] xl:w-[30%]">
         <div className="absolute inset-x-0 bottom-0 -z-10 mx-auto h-2/3 w-2/3 rounded-full bg-primary/10 blur-3xl" />
         <img
           src={images.hero_image}
           alt={`${hero.firstName} ${hero.lastName}`}
-          className="w-full h-auto object-cover select-none"
-          style={{
-            maskImage: "linear-gradient(to bottom, black 62%, transparent 97%)",
-            WebkitMaskImage:
-              "linear-gradient(to bottom, black 62%, transparent 97%)",
-          }}
+          className="w-full h-auto select-none drop-shadow-2xl"
         />
       </div>
 
       {/* Role + tagline + CTAs / Socials */}
-      <div className="relative z-10 mt-6 md:mt-4 flex flex-col md:flex-row items-center md:items-end justify-between gap-8">
+      <div className="relative z-10 -mt-4 md:mt-2 flex flex-col md:flex-row items-center md:items-end justify-between gap-8">
         <div className="max-w-sm text-center md:text-left">
           <h2 className="text-lg md:text-xl font-semibold">{hero.role}</h2>
           <p className="mt-2 text-sm md:text-base text-muted-foreground text-pretty">

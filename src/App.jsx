@@ -10,7 +10,7 @@ function App() {
     <div className="dark:bg-neutral-950">
       <Analytics/>
       <SpeedInsights/>
-      {/* <NavMain/> */}
+      <NavMain/>
       <NavMobile/>
       <Home/>
       <Footer/>

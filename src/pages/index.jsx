@@ -1,3 +1,4 @@
+import { BackgroundBeams } from "@/components/ui/background-beams";
 import { TechStack } from "@/components/TechStack";
 import { AboutSection } from "@/components/AboutSection";
 import { Container } from "@/components/ui/container";
@@ -5,6 +6,7 @@ import { Projects } from "@/components/Projects";
 import { Experience } from "@/components/Experience";
 import { Hero } from "@/components/Hero";
 import { useTheme } from "@/components/theme/theme-provider";
+import { BackgroundBeamsLight } from "@/components/ui/background-beams-light";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 
 export default function Home() {
@@ -23,7 +25,7 @@ export default function Home() {
   };
   return (
     <div>
-      <div className="relative space-y-10 py-10 md:py-0" id="home">
+      <div className="relative space-y-10 py-10 md:py-0 md:pt-16">
         <div className="md:hidden absolute right-0 top-0 pt-5 pr-8">
           <button
             aria-label="Toggle Dark Mode"
@@ -55,11 +57,11 @@ export default function Home() {
         </Container>
       </div>
 
-      {/* {isDark ? (
+      {isDark ? (
         <BackgroundBeams className="hidden md:flex" />
       ) : (
         <BackgroundBeamsLight className="hidden md:flex" />
-      )} */}
+      )}
     </div>
   );
 }
