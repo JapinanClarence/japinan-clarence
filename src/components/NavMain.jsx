@@ -1,7 +1,7 @@
-import React from "react";
+
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
-import { HomeIcon, MoonIcon, SunIcon } from "@heroicons/react/24/solid";
+import {  MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 import { useTheme } from "./theme/theme-provider";
 import { GithubIcon, LinkedinIcon } from "./icons";
 
