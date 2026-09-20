@@ -76,13 +76,13 @@ const techStack = [
 
 export function TechStack() {
   return (
-    <div className=" border-neutral-700">
-        <SectionHeader
-             backgroundText="Portfolio"
-             title="Tech Stack"
-             subtitle="Here are some of the technologies I have worked with."
-           />
-      <div className="grid gap-5  grid-cols-2 md:grid-cols-4">
+    <div className="scroll-mt-24 md:scroll-mt-28" id="tech-stack">
+      <SectionHeader
+        backgroundText="Tech Stack"
+        title="Tech Stack"
+        subtitle="Here are some of the technologies I have worked with."
+      />
+      <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 md:gap-4">
         {techStack.map((tech, i) => (
           <TechStackCard key={i} {...tech} />
         ))}

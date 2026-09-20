@@ -61,7 +61,7 @@ export function Projects() {
   return (
     <div className="scroll-mt-24 md:scroll-mt-28" id="projects">
       <SectionHeader
-        backgroundText="Portfolio"
+        backgroundText="Projects"
         title="Selected Work"
         subtitle="Here are some of the projects I have worked on."
       />

@@ -1,0 +1,51 @@
+diff --git a/src/components/TechStack.jsx b/src/components/TechStack.jsx
+index be07bb7..88772af 100644
+--- a/src/components/TechStack.jsx
++++ b/src/components/TechStack.jsx
+@@ -76,13 +76,13 @@ const techStack = [
+ 
+ export function TechStack() {
+   return (
+-    <div className=" border-neutral-700">
+-        <SectionHeader
+-             backgroundText="Portfolio"
+-             title="Tech Stack"
+-             subtitle="Here are some of the technologies I have worked with."
+-           />
+-      <div className="grid gap-5  grid-cols-2 md:grid-cols-4">
++    <div className="scroll-mt-24 md:scroll-mt-28" id="tech-stack">
++      <SectionHeader
++        backgroundText="Portfolio"
++        title="Tech Stack"
++        subtitle="Here are some of the technologies I have worked with."
++      />
++      <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 md:gap-4">
+         {techStack.map((tech, i) => (
+           <TechStackCard key={i} {...tech} />
+         ))}
+diff --git a/src/components/ui/techstack-card.jsx b/src/components/ui/techstack-card.jsx
+index bb32780..d2ff3c1 100644
+--- a/src/components/ui/techstack-card.jsx
++++ b/src/components/ui/techstack-card.jsx
+@@ -2,9 +2,18 @@ import React from "react";
+ 
+ export function TechStackCard({ title, icon: Icon }) {
+   return (
+-    <div className="inline-flex items-center gap-2">
+-      <Icon width={25} height={25} />
+-      {title}
++    <div
++      className={
++        "group flex items-center gap-3 rounded-lg border border-border bg-background px-4 py-3.5 shadow-sm " +
++        "transition-all duration-200 hover:-translate-y-0.5 hover:border-foreground/30 hover:shadow-md"
++      }
++    >
++      <Icon
++        width={22}
++        height={22}
++        className="shrink-0 transition-transform duration-200 group-hover:scale-110"
++      />
++      <span className="text-sm font-medium truncate">{title}</span>
+     </div>
+   );
+ }
