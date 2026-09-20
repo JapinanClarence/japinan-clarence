@@ -1,5 +1,6 @@
 import { TechStack } from "@/components/TechStack";
 import { Container } from "@/components/ui/container";
+import { Reveal } from "@/components/ui/reveal";
 import { Projects } from "@/components/Projects";
 import { Experience } from "@/components/Experience";
 import { Contact } from "@/components/Contact";
@@ -39,19 +40,29 @@ export default function Home() {
         </div>
 
         <Container className="lg:px-12 xl:px-16 ">
-          <Hero />
+          <Reveal amount={0.5}>
+            <Hero />
+          </Reveal>
         </Container>
         <Container className="lg:px-12 xl:px-16 ">
-          <TechStack />
+          <Reveal delay={0.1} amount={0.5}>
+            <TechStack />
+          </Reveal>
         </Container>
         <Container className="lg:px-12 xl:px-16 ">
-          <Projects />
+          <Reveal delay={0.2} amount={0.5}>
+            <Projects />
+          </Reveal>
         </Container>
         <Container className="lg:px-12 xl:px-16 ">
-          <Experience />
+          <Reveal delay={0.2} amount={0.5}>
+            <Experience />
+          </Reveal>
         </Container>
         <Container className="lg:px-12 xl:px-16 ">
-          <Contact />
+          <Reveal delay={0.2} amount={0.5}>
+            <Contact />
+          </Reveal>
         </Container>
       </div>
 
