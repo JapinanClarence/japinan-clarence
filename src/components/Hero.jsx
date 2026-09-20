@@ -22,50 +22,54 @@ const socials = [
 export function Hero() {
   return (
     <div
-      className="relative w-full flex flex-col justify-center gap-4 md:gap-3 py-8 md:py-6 md:min-h-[calc(100vh-4rem)] scroll-mt-24 md:scroll-mt-28"
+      className="relative w-full overflow-hidden flex flex-col justify-between gap-6 py-8 md:py-20 min-h-[100svh] md:min-h-[calc(100vh-4rem)] scroll-mt-24 md:scroll-mt-28"
       id="home"
     >
-      {/* Status badge */}
-      <div className="flex justify-center md:justify-start">
-        <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background/60 backdrop-blur px-4 py-1.5 text-xs md:text-sm font-medium shadow-sm">
-          <span className="relative flex h-2 w-2">
-            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
-            <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
-          </span>
-          {hero.status}
+      {/* Top content: status badge + big split name */}
+      <div className="relative z-10 flex flex-col gap-4 md:gap-3">
+        {/* Status badge */}
+        <div className="flex justify-center md:justify-start">
+          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background/60 backdrop-blur px-4 py-1.5 text-xs md:text-sm font-medium shadow-sm">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
+            </span>
+            {hero.status}
+          </div>
+        </div>
+
+        {/* Big split name */}
+        <div className="relative text-center md:text-left leading-[0.95]">
+          <h1 className="font-sans font-extrabold uppercase tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
+            <span
+              className="block md:inline text-transparent"
+              style={{
+                WebkitTextStroke: "1.5px hsl(var(--foreground))",
+              }}
+            >
+              {hero.firstName}
+            </span>{" "}
+            <span className="block md:inline text-foreground">
+              {hero.lastName}
+            </span>
+          </h1>
         </div>
       </div>
 
-      {/* Big split name */}
-      <div className="relative text-center md:text-left leading-[0.95]">
-        <h1 className="font-sans font-extrabold uppercase tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
-          <span
-            className="block md:inline text-transparent"
-            style={{
-              WebkitTextStroke: "1.5px hsl(var(--foreground))",
-            }}
-          >
-            {hero.firstName}
-          </span>{" "}
-          <span className="block md:inline text-foreground">
-            {hero.lastName}
-          </span>
-        </h1>
+      {/* Portrait — pinned flush to the bottom edge of the hero section, bleeding
+          off it, and sized bigger than the surrounding content like the reference. */}
+      <div className="pointer-events-none absolute inset-0 z-20 flex items-end justify-center">
+        <div className="relative h-[56vh] sm:h-[64vh] md:h-[82%] lg:h-[90%]">
+          <div className="absolute inset-x-0 bottom-0 -z-10 mx-auto h-2/3 w-2/3 rounded-full bg-primary/10 blur-3xl" />
+          <img
+            src={images.hero_image}
+            alt={`${hero.firstName} ${hero.lastName}`}
+            className="h-full w-auto select-none drop-shadow-2xl grayscale"
+          />
+        </div>
       </div>
 
-      {/* Portrait — real transparent cutout, bleeds to the bottom like the reference.
-          Sized by height (not width) so it's centered predictably and its footprint
-          is bounded, keeping the whole hero within one viewport. */}
-      <div className="relative mx-auto self-center w-fit -mt-1 md:-mt-4 h-[190px] sm:h-[240px] md:h-[300px] lg:h-[340px] xl:h-[380px]">
-        <div className="absolute inset-0 -z-10 scale-110 rounded-full bg-primary/10 blur-3xl" />
-        <img
-          src={images.hero_image}
-          alt={`${hero.firstName} ${hero.lastName}`}
-          className="h-full w-auto select-none drop-shadow-2xl"
-        />
-      </div>
-
-      {/* Role + tagline + CTAs / Socials */}
+      {/* Role + tagline + CTAs / Socials — sits in front of the portrait near the bottom */}
       <div className="relative z-10 flex flex-col md:flex-row items-center md:items-end justify-between gap-6 md:gap-8">
         <div className="max-w-sm text-center md:text-left">
           <h2 className="text-lg md:text-xl font-semibold">{hero.role}</h2>

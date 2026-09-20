@@ -22,7 +22,7 @@ export function Contact() {
   return (
     <div
       id="contact"
-      className="scroll-mt-24 md:scroll-mt-28 flex flex-col items-center py-10 md:py-16 text-center"
+      className="scroll-mt-24 md:scroll-mt-28 mt-32 flex flex-col items-center py-10 md:py-16 text-center"
     >
       {/* Status badge */}
       <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background/60 backdrop-blur px-4 py-1.5 text-xs md:text-sm font-medium shadow-sm">

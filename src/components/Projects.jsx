@@ -59,7 +59,7 @@ export const projects = [
 
 export function Projects() {
   return (
-    <div className="scroll-mt-24 md:scroll-mt-28 mt-20" id="projects">
+    <div className="scroll-mt-24 md:scroll-mt-28 mt-40" id="projects">
       <SectionHeader
         backgroundText="Projects"
         title="Selected Work"

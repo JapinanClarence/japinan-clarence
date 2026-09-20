@@ -23,7 +23,7 @@ export default function Home() {
   };
   return (
     <div>
-      <div className="relative space-y-10 py-10 md:py-0 md:pt-16">
+      <div className="relative py-10 md:py-0 md:pt-16">
         <div className="md:hidden absolute right-0 top-0 pt-5 pr-8">
           <button
             aria-label="Toggle Dark Mode"
@@ -38,7 +38,7 @@ export default function Home() {
           </button>
         </div>
 
-        <Container className="mt-0 lg:px-12 xl:px-16 ">
+        <Container className="lg:px-12 xl:px-16 ">
           <Hero />
         </Container>
         <Container className="lg:px-12 xl:px-16 ">
