@@ -40,27 +40,27 @@ export default function Home() {
         </div>
 
         <Container className="lg:px-12 xl:px-16 ">
-          <Reveal amount={0.5}>
+          <Reveal>
             <Hero />
           </Reveal>
         </Container>
         <Container className="lg:px-12 xl:px-16 ">
-          <Reveal delay={0.1} amount={0.5}>
+          <Reveal delay={0.1}>
             <TechStack />
           </Reveal>
         </Container>
         <Container className="lg:px-12 xl:px-16 ">
-          <Reveal delay={0.2} amount={0.5}>
+          <Reveal delay={0.2}>
             <Projects />
           </Reveal>
         </Container>
         <Container className="lg:px-12 xl:px-16 ">
-          <Reveal delay={0.2} amount={0.5}>
+          <Reveal delay={0.2}>
             <Experience />
           </Reveal>
         </Container>
         <Container className="lg:px-12 xl:px-16 ">
-          <Reveal delay={0.2} amount={0.5}>
+          <Reveal delay={0.2}>
             <Contact />
           </Reveal>
         </Container>

@@ -6,6 +6,15 @@ import { motion } from "motion/react";
  * to false, the effect reverses when the section scrolls back out of view
  * (e.g. the Hero section blurs out as you scroll down into Tech Stack).
  *
+ * `amount` is a fraction of the CHILD's own height, not the viewport's —
+ * for a section taller than the viewport (Projects, Experience on mobile),
+ * a value like 0.5 can require scrolling far into the section, well past
+ * its top edge, before that much of it has ever been on screen at once,
+ * leaving a stretch of blank space beforehand. `amount = "some"` instead
+ * triggers as soon as a single pixel is visible, so long sections reveal
+ * right as they enter, regardless of how tall they are relative to the
+ * viewport (which varies a lot between mobile and desktop).
+ *
  * <Reveal><TechStack /></Reveal>
  */
 export function Reveal({
@@ -13,7 +22,7 @@ export function Reveal({
   className,
   y = 48,
   blur = 14,
-  amount = 0.35,
+  amount = "some",
   once = false,
   delay = 0,
 }) {
