@@ -1,4 +1,3 @@
-import { BackgroundBeams } from "@/components/ui/background-beams";
 import { TechStack } from "@/components/TechStack";
 import { AboutSection } from "@/components/AboutSection";
 import { Container } from "@/components/ui/container";
@@ -6,7 +5,6 @@ import { Projects } from "@/components/Projects";
 import { Experience } from "@/components/Experience";
 import { Hero } from "@/components/Hero";
 import { useTheme } from "@/components/theme/theme-provider";
-import { BackgroundBeamsLight } from "@/components/ui/background-beams-light";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 
 export default function Home() {
@@ -40,28 +38,28 @@ export default function Home() {
           </button>
         </div>
 
-        <Container className="mt-6 md:mt-0 lg:px-12 xl:px-16 md:min-h-screen flex items-center">
+        <Container className="mt-0 lg:px-12 xl:px-16 ">
           <Hero />
         </Container>
-        <Container>
+        <Container className="lg:px-12 xl:px-16 ">
           <AboutSection />
         </Container>
-        <Container>
+        <Container className="lg:px-12 xl:px-16 ">
           <TechStack />
         </Container>
-        <Container>
+        <Container className="lg:px-12 xl:px-16 ">
           <Projects />
         </Container>
-        <Container>
+        <Container className="lg:px-12 xl:px-16 ">
           <Experience />
         </Container>
       </div>
 
-      {isDark ? (
+      {/* {isDark ? (
         <BackgroundBeams className="hidden md:flex" />
       ) : (
         <BackgroundBeamsLight className="hidden md:flex" />
-      )}
+      )} */}
     </div>
   );
 }

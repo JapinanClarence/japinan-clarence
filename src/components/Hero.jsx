@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "@/components/ui/button";
 import { images } from "@/constants/images";
 import { FileText, Mail, ArrowUpRight } from "lucide-react";
@@ -22,7 +21,10 @@ const socials = [
 
 export function Hero() {
   return (
-    <div className="relative w-full pt-6 md:pt-10 pb-10 scroll-mt-24 md:scroll-mt-28" id="home">
+    <div
+      className="relative w-full flex flex-col justify-center gap-4 md:gap-3 py-8 md:py-6 md:min-h-[calc(100vh-4rem)] scroll-mt-24 md:scroll-mt-28"
+      id="home"
+    >
       {/* Status badge */}
       <div className="flex justify-center md:justify-start">
         <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background/60 backdrop-blur px-4 py-1.5 text-xs md:text-sm font-medium shadow-sm">
@@ -35,8 +37,8 @@ export function Hero() {
       </div>
 
       {/* Big split name */}
-      <div className="relative mt-4 md:mt-6 text-center md:text-left leading-[0.95]">
-        <h1 className="font-sans font-extrabold uppercase tracking-tight text-[16vw] sm:text-[13vw] md:text-[7.2vw] xl:text-[6.6vw]">
+      <div className="relative text-center md:text-left leading-[0.95]">
+        <h1 className="font-sans font-extrabold uppercase tracking-tight text-5xl sm:text-6xl md:text-7xl lg:text-8xl">
           <span
             className="block md:inline text-transparent"
             style={{
@@ -51,18 +53,20 @@ export function Hero() {
         </h1>
       </div>
 
-      {/* Portrait — real transparent cutout, bleeds to the bottom like the reference */}
-      <div className="relative mx-auto md:mx-0 md:ml-[27%] xl:ml-[29%] mt-0 md:-mt-6 xl:-mt-8 w-[62%] sm:w-[48%] md:w-[36%] xl:w-[30%]">
-        <div className="absolute inset-x-0 bottom-0 -z-10 mx-auto h-2/3 w-2/3 rounded-full bg-primary/10 blur-3xl" />
+      {/* Portrait — real transparent cutout, bleeds to the bottom like the reference.
+          Sized by height (not width) so it's centered predictably and its footprint
+          is bounded, keeping the whole hero within one viewport. */}
+      <div className="relative mx-auto self-center w-fit -mt-1 md:-mt-4 h-[190px] sm:h-[240px] md:h-[300px] lg:h-[340px] xl:h-[380px]">
+        <div className="absolute inset-0 -z-10 scale-110 rounded-full bg-primary/10 blur-3xl" />
         <img
           src={images.hero_image}
           alt={`${hero.firstName} ${hero.lastName}`}
-          className="w-full h-auto select-none drop-shadow-2xl"
+          className="h-full w-auto select-none drop-shadow-2xl"
         />
       </div>
 
       {/* Role + tagline + CTAs / Socials */}
-      <div className="relative z-10 -mt-4 md:mt-2 flex flex-col md:flex-row items-center md:items-end justify-between gap-8">
+      <div className="relative z-10 flex flex-col md:flex-row items-center md:items-end justify-between gap-6 md:gap-8">
         <div className="max-w-sm text-center md:text-left">
           <h2 className="text-lg md:text-xl font-semibold">{hero.role}</h2>
           <p className="mt-2 text-sm md:text-base text-muted-foreground text-pretty">

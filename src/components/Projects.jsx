@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
 import { ProjectCard } from "./ui/project-card";
+import { SectionHeader } from "./ui/section-header";
 import { images } from "@/constants/images";
-import { cn } from "@/lib/utils";
 
 export const projects = [
   // {
@@ -61,9 +60,12 @@ export const projects = [
 export function Projects() {
   return (
     <div className="scroll-mt-24 md:scroll-mt-28" id="projects">
-      <h1 className="text-start text-lg font-semibold mb-5 ">Projects</h1>
-      <h2>Here are some of the projects I have worked on:</h2>
-      <div className="mt-5 flex flex-col  gap-5">
+      <SectionHeader
+        backgroundText="Portfolio"
+        title="Selected Work"
+        subtitle="Here are some of the projects I have worked on."
+      />
+      <div className="mt-8 flex flex-col  gap-5">
         {projects.map((item, index) => (
           <ProjectCard
             key={index}

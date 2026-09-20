@@ -1,4 +1,5 @@
-import React from "react";
+
+import { SectionHeader } from "./ui/section-header";
 
 export const experience = [
   // {
@@ -36,7 +37,11 @@ export const experience = [
 export const Experience = () => {
   return (
     <div className="text-primary scroll-mt-24 md:scroll-mt-28" id="experience">
-      <h1 className="text-start text-lg font-semibold mb-5">Experience</h1>
+   <SectionHeader
+        backgroundText="Portfolio"
+        title="Experience"
+        subtitle="+1 year of experience"
+      />
 
       <div className="relative space-y-8">
         {/* The Vertical Line - Centered relative to the 12px (size-3) dots */}

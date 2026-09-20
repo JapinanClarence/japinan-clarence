@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
