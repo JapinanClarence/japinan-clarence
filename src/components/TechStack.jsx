@@ -1,11 +1,9 @@
-import React from "react";
 import {
   JavascriptIcon,
   ExpressIcon,
   TailwindIcon,
   BootstrapIcon,
   MysqlIcon,
-  GithubIcon,
   MongodbIcon,
   PhpIcon,
   ReactIcon,
@@ -13,10 +11,9 @@ import {
   NodejsIcon,
   SocketioIcon,
   ArduinoIcon,
-  PostmanIcon,
-  VercelIcon,
 } from "@/components/icons";
 import { TechStackCard } from "./ui/techstack-card";
+import { SectionHeader } from "./ui/section-header";
 
 const techStack = [
   {
@@ -80,7 +77,11 @@ const techStack = [
 export function TechStack() {
   return (
     <div className=" border-neutral-700">
-      <h1 className="text-start text-lg font-semibold mb-5">Tech Stack</h1>
+        <SectionHeader
+             backgroundText="Portfolio"
+             title="Tech Stack"
+             subtitle="Here are some of the technologies I have worked with."
+           />
       <div className="grid gap-5  grid-cols-2 md:grid-cols-4">
         {techStack.map((tech, i) => (
           <TechStackCard key={i} {...tech} />

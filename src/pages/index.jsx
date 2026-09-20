@@ -1,5 +1,4 @@
 import { TechStack } from "@/components/TechStack";
-import { AboutSection } from "@/components/AboutSection";
 import { Container } from "@/components/ui/container";
 import { Projects } from "@/components/Projects";
 import { Experience } from "@/components/Experience";
@@ -40,9 +39,6 @@ export default function Home() {
 
         <Container className="mt-0 lg:px-12 xl:px-16 ">
           <Hero />
-        </Container>
-        <Container className="lg:px-12 xl:px-16 ">
-          <AboutSection />
         </Container>
         <Container className="lg:px-12 xl:px-16 ">
           <TechStack />
