@@ -56,10 +56,12 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Portrait — pinned flush to the bottom edge of the hero section, bleeding
-          off it, and sized bigger than the surrounding content like the reference. */}
-      <div className="pointer-events-none absolute inset-0 z-20 flex items-end justify-center">
-        <div className="relative h-[56vh] sm:h-[64vh] md:h-[82%] lg:h-[90%]">
+      {/* Portrait — on mobile it sits in normal document flow between the name
+          and the role/CTA content so it can't overlap them. From md up it
+          switches back to being pinned flush to the bottom edge of the hero
+          section, bleeding off it, like the reference. */}
+      <div className="pointer-events-none relative z-0 flex items-end justify-center md:absolute md:inset-0 md:z-20">
+        <div className="relative h-[34vh] sm:h-[42vh] md:h-[82%] lg:h-[90%]">
           <div className="absolute inset-x-0 bottom-0 -z-10 mx-auto h-2/3 w-2/3 rounded-full bg-primary/10 blur-3xl" />
           <img
             src={images.hero_image}
