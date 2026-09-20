@@ -104,6 +104,10 @@ module.exports = {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0)" },
         },
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
+        },
       },
       animation: {
         aurora: "aurora 60s linear infinite",
@@ -112,6 +116,7 @@ module.exports = {
         "zoom-slow": "zoomSlow 4s linear forwards",
         "slide-left": "slideLeft 4s ease-in-out forwards",
         "slide-in-right": "slideInRight 1s ease-in-out forwards",
+        marquee: "marquee 28s linear infinite",
       },
     },
   },

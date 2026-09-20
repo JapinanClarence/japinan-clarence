@@ -1,11 +1,9 @@
-import React from "react";
 import {
   JavascriptIcon,
   ExpressIcon,
   TailwindIcon,
   BootstrapIcon,
   MysqlIcon,
-  GithubIcon,
   MongodbIcon,
   PhpIcon,
   ReactIcon,
@@ -13,10 +11,9 @@ import {
   NodejsIcon,
   SocketioIcon,
   ArduinoIcon,
-  PostmanIcon,
-  VercelIcon,
 } from "@/components/icons";
 import { TechStackCard } from "./ui/techstack-card";
+import { SectionHeader } from "./ui/section-header";
 
 const techStack = [
   {
@@ -79,12 +76,23 @@ const techStack = [
 
 export function TechStack() {
   return (
-    <div className=" border-neutral-700">
-      <h1 className="text-start text-lg font-semibold mb-5">Tech Stack</h1>
-      <div className="grid gap-5  grid-cols-2 md:grid-cols-4">
-        {techStack.map((tech, i) => (
-          <TechStackCard key={i} {...tech} />
-        ))}
+    <div className="scroll-mt-24 md:scroll-mt-28 mt-40" id="tech-stack">
+      <SectionHeader
+        backgroundText="Tech Stack"
+        title="Tech Stack"
+        subtitle="Here are some of the technologies I have worked with."
+      />
+      <div
+        className={
+          "mt-8 overflow-hidden " +
+          "[mask-image:linear-gradient(to_right,transparent,black_8%,black_92%,transparent)]"
+        }
+      >
+        <div className="flex w-max gap-3 md:gap-4 animate-marquee hover:[animation-play-state:paused] motion-reduce:animate-none">
+          {[...techStack, ...techStack].map((tech, i) => (
+            <TechStackCard key={i} {...tech} />
+          ))}
+        </div>
       </div>
     </div>
   );

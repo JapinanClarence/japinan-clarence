@@ -1,15 +1,11 @@
-import { useState } from "react";
-import { BackgroundBeams } from "@/components/ui/background-beams";
-import { Button } from "@/components/ui/button";
-import { images } from "@/constants/images";
 import { TechStack } from "@/components/TechStack";
-import { AboutSection } from "@/components/AboutSection";
 import { Container } from "@/components/ui/container";
-import { FileText } from "lucide-react";
+import { Reveal } from "@/components/ui/reveal";
 import { Projects } from "@/components/Projects";
 import { Experience } from "@/components/Experience";
+import { Contact } from "@/components/Contact";
+import { Hero } from "@/components/Hero";
 import { useTheme } from "@/components/theme/theme-provider";
-import { BackgroundBeamsLight } from "@/components/ui/background-beams-light";
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid";
 
 export default function Home() {
@@ -28,7 +24,7 @@ export default function Home() {
   };
   return (
     <div>
-      <div className="relative space-y-10 py-10 md:py-0" id="home">
+      <div className="relative py-10 md:py-0 md:pt-16">
         <div className="md:hidden absolute right-0 top-0 pt-5 pr-8">
           <button
             aria-label="Toggle Dark Mode"
@@ -43,53 +39,38 @@ export default function Home() {
           </button>
         </div>
 
-        <Container className="mt-10 md:mt-0 md:h-screen flex flex-col md:flex-row justify-center md:justify-between gap-10 items-start md:items-center">
-          <div className="">
-            <h1 className="relative z-10 text-4xl  xl:text-6xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-start font-sans font-bold">
-              JapinanClarence
-            </h1>
-
-            <div className=" md:text-xl">Full-stack web developer</div>
-            <div className="mt-10 z-10 relative flex items-center  space-x-2">
-              <Button
-                size="sm"
-                onClick={() =>
-                  window.open("mailto:japinanclarence@email.com", "_blank")
-                }
-              >
-                Get in Touch
-              </Button>
-              <a href="https://drive.google.com/file/d/1GGx6U6UDhzsBwt8nrbtauomDzHX95uI9/view?usp=sharing">
-                <Button variant={isDark ? "secondary" : "outline"} size="sm">
-                  <FileText />
-                  Resume
-                </Button>
-              </a>
-            </div>
-          </div>
-          <div className="aspect-square w-full md:w-[300px]  h-[300px] overflow-clip z-10 shadow-sm rounded-lg">
-            <img src={images.hero_image} alt="" className=" object-cover" />
-          </div>
+        <Container className="lg:px-12 xl:px-16 ">
+          <Reveal>
+            <Hero />
+          </Reveal>
         </Container>
-        <Container>
-          <AboutSection />
+        <Container className="lg:px-12 xl:px-16 ">
+          <Reveal delay={0.1}>
+            <TechStack />
+          </Reveal>
         </Container>
-        <Container>
-          <TechStack />
+        <Container className="lg:px-12 xl:px-16 ">
+          <Reveal delay={0.2}>
+            <Projects />
+          </Reveal>
         </Container>
-        <Container>
-          <Projects />
+        <Container className="lg:px-12 xl:px-16 ">
+          <Reveal delay={0.2}>
+            <Experience />
+          </Reveal>
         </Container>
-        <Container>
-          <Experience />
+        <Container className="lg:px-12 xl:px-16 ">
+          <Reveal delay={0.2}>
+            <Contact />
+          </Reveal>
         </Container>
       </div>
 
-      {isDark ? (
+      {/* {isDark ? (
         <BackgroundBeams className="hidden md:flex" />
       ) : (
         <BackgroundBeamsLight className="hidden md:flex" />
-      )}
+      )} */}
     </div>
   );
 }

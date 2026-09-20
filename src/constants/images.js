@@ -10,7 +10,8 @@ import transitmaster_preview3 from "@/assets/projects/transitmaster-preview3.png
 import timetap_preview1 from "@/assets/projects/timetap-preview.png"
 import timetap_preview2 from "@/assets/projects/timetap-preview2.png"
 import timetap_preview3 from "@/assets/projects/timetap-preview3.png"
-import hero_image from "@/assets/clarence-1.jpg";
+// TODO: swap for the new cutout/portrait photo once ready — used as the Hero placeholder
+import hero_image from "@/assets/japinan-profile.png";
 import rgan_website from "@/assets/projects/rgan-website.png"
 import rgan_website2 from "@/assets/projects/rgan-website2.png"
 import rgan_website3 from "@/assets/projects/rgan-website3.png"
