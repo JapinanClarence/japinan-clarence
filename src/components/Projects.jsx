@@ -1,9 +1,15 @@
-import React, { useEffect, useState } from "react";
 import { ProjectCard } from "./ui/project-card";
 import { images } from "@/constants/images";
-import { cn } from "@/lib/utils";
 
 const projects = [
+   {
+    title: "RGAN XI",
+    description:
+      "A TypeScript and Next.js monorepo for the Gender Research and Development (GAD) platform. It contains a public journal website and an authenticated admin dashboard, sharing common code through npm workspaces.",
+    image: [images.rgan_1, images.rgan_2, images.rgan_3],
+    websiteLink: "https://rganxi.org/",
+    tech: ["NextJs", "Supabase", "TypeScript", "Turbo Repo"],
+  },
   {
     title: "PCSI",
     description:
