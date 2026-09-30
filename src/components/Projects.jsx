@@ -2,26 +2,17 @@ import { ProjectCard } from "./ui/project-card";
 import { SectionHeader } from "./ui/section-header";
 import { images } from "@/constants/images";
 
-export const projects = [
-  // {
-  //   title: "RGAN Website",
-  //   description:
-  //     "Developed the complete foundational content suite for the Region XI Gender and Development Advocates Network (RGAN XI), a Philippines-based non-profit advancing gender equality and inclusive development, and its affiliated academic publication, the Gender Research & Policy Journal (GRPJ).",
-  //   image: [images.rgan_website, images.rgan_website2, images.rgan_website3],
-  //   websiteLink: "https://rgan-website-web.vercel.app/",
-  //   inProgress: true,
-  //   tech: ["NextJs", "Supabase", "TypeScript", "Tailwind CSS"],
-  // },
-  // {
-  //   title: "PCSI",
-  //   description:
-  //     "A comprehensive web application for the Philippine Coleopterist Society Inc., featuring a modern React frontend with advanced UI components and a robust Node.js backend API.",
-  //   image: [images.pcsi_preview1, images.pcsi_preview2, images.pcsi_preview3],
-  //   websiteLink: "https://philippinecoleopterists.org/",
-  //   tech: ["ReactJs", "ExpressJs", "MongoDb", "Tailwind CSS"],
-  // },
+const projects = [
    {
-    title: "TimeTap",
+    title: "RGAN XI",
+    description:
+      "A TypeScript and Next.js monorepo for the Gender Research and Development (GAD) platform. It contains a public journal website and an authenticated admin dashboard, sharing common code through npm workspaces.",
+    image: [images.rgan_1, images.rgan_2, images.rgan_3],
+    websiteLink: "https://rganxi.org/",
+    tech: ["NextJs", "Supabase", "TypeScript", "Turbo Repo"],
+  },
+  {
+    title: "PCSI",
     description:
       "TimeTap is a QR-based attendance management system designed to streamline event check-ins and participant tracking. The platform integrates geo-fence technology to validate user location during attendance, ensuring that check-ins occur only within the authorized event area.",
     image: [
