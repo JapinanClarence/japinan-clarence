@@ -1,4 +1,11 @@
 {
   "flipWords": ["responsive", "scalable", "modern"],
-  "aboutMe": "Passionate about web development with hands-on experience in PHP, MySQL, and the MERN stack. Skilled in building scalable and efficient RESTful APIs, optimizing database structures, enhancing system performance, and developing secure, high-quality web applications. Always eager to learn and improve in fast-paced development environments."
+  "aboutMe": "Passionate about web development with hands-on experience in PHP, MySQL, and the MERN stack. Skilled in building scalable and efficient RESTful APIs, optimizing database structures, enhancing system performance, and developing secure, high-quality web applications. Always eager to learn and improve in fast-paced development environments.",
+  "hero": {
+    "status": "Available for Freelance Work",
+    "firstName": "Clarence",
+    "lastName": "Japinan",
+    "role": "Full-Stack Developer",
+    "tagline": "Building fast, reliable, and scalable web apps — from database to deployment."
+  }
 }

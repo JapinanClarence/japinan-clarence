@@ -10,10 +10,11 @@ import transitmaster_preview3 from "@/assets/projects/transitmaster-preview3.png
 import timetap_preview1 from "@/assets/projects/timetap-preview.png"
 import timetap_preview2 from "@/assets/projects/timetap-preview2.png"
 import timetap_preview3 from "@/assets/projects/timetap-preview3.png"
-import hero_image from "@/assets/clarence-1.jpg";
 import rgan_1 from "@/assets/projects/rganxi_1.png";
 import rgan_2 from "@/assets/projects/rganxi_2.png";
 import rgan_3 from "@/assets/projects/rganxi_3.png";
+// TODO: swap for the new cutout/portrait photo once ready — used as the Hero placeholder
+import hero_image from "@/assets/japinan-profile.png";
 
 export const images = {
     pcsi_preview1,

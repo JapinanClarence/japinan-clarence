@@ -20,7 +20,7 @@ const ProjectCardImage = ({ images, title }) => {
   }, [images]);
 
   return (
-    <div className="relative aspect-video md:w-1/2 bg-slate-700 overflow-hidden rounded-lg border dark:border-zinc-500 ">
+    <div className="relative w-full md:w-2/5 aspect-video md:aspect-[4/3] md:max-h-64 lg:max-h-72 bg-slate-700 overflow-hidden rounded-lg border dark:border-zinc-500 shrink-0">
       {images?.map((src, index) => (
         <div
           key={src}
@@ -74,10 +74,10 @@ export const ProjectCard = ({ data, orientation }) => {
 
       <div
         className={
-          "group md:hover:translate-x-2 transition-translate duration-300 ease-out md:w-1/2"
+          "group md:hover:translate-x-2 transition-translate duration-300 ease-out md:w-3/5"
         }
       >
-        <h2 className="text-md font-semibold mb-2">
+        <h2 className="text-base md:text-lg font-semibold mb-2">
           {data.title}
           {data.inProgress && (
             <Badge className={"ml-1 shadow-sm"} variant={"outline"}>
@@ -85,8 +85,10 @@ export const ProjectCard = ({ data, orientation }) => {
             </Badge>
           )}
         </h2>
-        <p className="text-sm">{data.description}</p>
-        <div className="mt-2 flex gap-2 flex-wrap">
+        <p className="text-sm text-muted-foreground leading-relaxed">
+          {data.description}
+        </p>
+        <div className="mt-3 flex gap-2 flex-wrap">
           {data?.tech?.map((t, index) => (
             <Badge
               className={"shadow-sm"}

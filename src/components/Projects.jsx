@@ -1,4 +1,5 @@
 import { ProjectCard } from "./ui/project-card";
+import { SectionHeader } from "./ui/section-header";
 import { images } from "@/constants/images";
 
 const projects = [
@@ -13,15 +14,20 @@ const projects = [
   {
     title: "PCSI",
     description:
-      "A comprehensive web application for the Philippine Coleopterist Society Inc., featuring a modern React frontend with advanced UI components and a robust Node.js backend API.",
-    image: [images.pcsi_preview1, images.pcsi_preview2, images.pcsi_preview3],
-    websiteLink: "https://philippinecoleopterists.org/",
-    tech: ["ReactJs", "ExpressJs", "MongoDb", "Tailwind CSS"],
+      "TimeTap is a QR-based attendance management system designed to streamline event check-ins and participant tracking. The platform integrates geo-fence technology to validate user location during attendance, ensuring that check-ins occur only within the authorized event area.",
+    image: [
+      images.timetap_preview1,
+      images.timetap_preview2,
+      images.timetap_preview3,
+    ],
+    inProgress: false,
+    websiteLink: "https://timetap.japinanc.space",
+    tech: ["PHP", "Laravel", "ReactJs", "MySQL", "InertiaJS"],
   },
   {
     title: "Biophysical Ocean Bouy Development",
     description:
-      "Contributed to the development of the biophysical ocean bouy, this device can measure the temperature and ph level of the water. It is also equipped with a GPS module to track the location of the bouy.",
+      "Designed and developed the hardware device for the Biophysical Ocean Buoy (BoB), utilizing Arduino and ESP32 microcontrollers to capture live water quality metrics and provide continuous geospatial tracking.",
     image: [images.bouy_preview1, images.bouy_preview2, images.bouy_preview3],
     isClickable: false,
     githubLink: "https://github.com/JapinanClarence/Biophysical-Ocean-Buoy.git",
@@ -39,27 +45,18 @@ const projects = [
     websiteLink: "https://app-transitmaster.vercel.app",
     tech: ["ExpressJs", "ReactJs", "MongoDb", "Mapbox", "Socket.IO", "ESP32"],
   },
-  {
-    title: "TimeTap",
-    description:
-      "TimeTap is a QR-based attendance management system designed to streamline event check-ins and participant tracking. The platform integrates geo-fence technology to validate user location during attendance, ensuring that check-ins occur only within the authorized event area.",
-    image: [
-      images.timetap_preview1,
-      images.timetap_preview2,
-      images.timetap_preview3,
-    ],
-    inProgress: false,
-    websiteLink: "https://timetap.japinanc.space",
-    tech: ["PHP", "Laravel", "ReactJs", "MySQL", "InertiaJS"],
-  },
+ 
 ];
 
 export function Projects() {
   return (
-    <div className="" id="projects">
-      <h1 className="text-start text-lg font-semibold mb-5 ">Projects</h1>
-      <h2>Here are some of the projects I have worked on:</h2>
-      <div className="mt-5 flex flex-col  gap-5">
+    <div className="scroll-mt-24 md:scroll-mt-28 mt-40" id="projects">
+      <SectionHeader
+        backgroundText="Projects"
+        title="Selected Work"
+        subtitle="Here are some of the projects I have worked on."
+      />
+      <div className="mt-8 flex flex-col  gap-10">
         {projects.map((item, index) => (
           <ProjectCard
             key={index}
