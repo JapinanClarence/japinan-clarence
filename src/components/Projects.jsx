@@ -2,7 +2,7 @@ import { ProjectCard } from "./ui/project-card";
 import { SectionHeader } from "./ui/section-header";
 import { images } from "@/constants/images";
 
-const projects = [
+export const projects = [
    {
     title: "RGAN XI",
     description:
@@ -12,7 +12,7 @@ const projects = [
     tech: ["NextJs", "Supabase", "TypeScript", "Turbo Repo"],
   },
   {
-    title: "PCSI",
+    title: "TimeTap",
     description:
       "TimeTap is a QR-based attendance management system designed to streamline event check-ins and participant tracking. The platform integrates geo-fence technology to validate user location during attendance, ensuring that check-ins occur only within the authorized event area.",
     image: [
