@@ -3,7 +3,7 @@ import { SectionHeader } from "./ui/section-header";
 import { images } from "@/constants/images";
 
 export const projects = [
-   {
+  {
     title: "RGAN XI",
     description:
       "A TypeScript and Next.js monorepo for the Gender Research and Development (GAD) platform. It contains a public journal website and an authenticated admin dashboard, sharing common code through npm workspaces.",
@@ -23,6 +23,14 @@ export const projects = [
     inProgress: false,
     websiteLink: "https://timetap.japinanc.space",
     tech: ["PHP", "Laravel", "ReactJs", "MySQL", "InertiaJS"],
+  },
+  {
+    title: "PCSI",
+    description:
+      "A comprehensive web application for the Philippine Coleopterist Society Inc., featuring a modern React frontend with advanced UI components and a robust Node.js backend API.",
+    image: [images.pcsi_preview1, images.pcsi_preview2, images.pcsi_preview3],
+    websiteLink: "https://philippinecoleopterists.org/",
+    tech: ["ReactJs", "ExpressJs", "MongoDb", "Tailwind CSS"],
   },
   {
     title: "Biophysical Ocean Bouy Development",
@@ -45,7 +53,6 @@ export const projects = [
     websiteLink: "https://app-transitmaster.vercel.app",
     tech: ["ExpressJs", "ReactJs", "MongoDb", "Mapbox", "Socket.IO", "ESP32"],
   },
- 
 ];
 
 export function Projects() {
