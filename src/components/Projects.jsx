@@ -6,7 +6,7 @@ export const projects = [
   {
     title: "RGAN XI",
     description:
-      "A TypeScript and Next.js monorepo for the Gender Research and Development (GAD) platform. It contains a public journal website and an authenticated admin dashboard, sharing common code through npm workspaces.",
+      "A TypeScript and Next.js monorepo for the Region XI Gender and Development Advocates Network. It contains a public journal website and an authenticated admin dashboard, sharing common code through npm workspaces.",
     image: [images.rgan_1, images.rgan_2, images.rgan_3],
     websiteLink: "https://rganxi.org/",
     tech: ["NextJs", "Supabase", "TypeScript", "Turbo Repo"],
